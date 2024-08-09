@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready To Cook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
+        /* -------navbar-code ------- */
+
+
+        body {
+            background: linear-gradient(to right, #f7f6f5, #fefaf8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .heading {
+            width: 100%;
+            text-align: center;
+            margin: 0 0;
+        }
+
+        .head {
+            margin: 10px;
+            height: 10.5vh;
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            /* text-align: center; */
+            background: linear-gradient(135deg, #f2bea0 0%, #fda085 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .head::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            z-index: -1;
+            filter: blur(20px);
+            opacity: 0.7;
+            transition: all 0.5s;
+        }
+
+        .head:hover::before {
+            filter: blur(25px);
+            opacity: 1;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* above is-----------new code --------------- */
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .item {
+            height: auto;
+            width: 20vw;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 20px;
+            border: 1px solid #fda085;
+
+        }
+
+        .item a {
+            text-decoration: none;
+        }
+
+        .btn {
+            height: 50px;
+            width: 100%;
+            border-radius: 50px;
+            display: block;
+            transition: all 0.4s;
+
+        }
+
+        .btn:hover {
+            color: azure;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        .item:hover {
+            background-color: pink;
+        }
+
+        .item img {
+            max-width: 100%;
+            height: 35vh;
+            width: 25vw;
+            align-self: center;
+        }
+
+        .desci {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .desci:hover {
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1 class="head">&nbsp;Ready to Cook &nbsp;<img src="ingredient.png" alt="" srcset="" width="60px" height="60px"></h1>
+    </div>
+    <!--navbar-->
+
+    <div class="container">
+        <div class="item">
+            <a href="https://www.amazon.in/Tata-Simply-Better-Plant-Based-Nuggets/dp/B0B46FQDP8/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.TZgyHrmSIJJrLTdqu2z3srqQQTdVQ_oZlA8zvug-5LdgHGpqsPitshBHqA3_43A_7nWyXnwtZ6U8JvM2QJGHmGGRhPLAzhpW2pClxGQHBJarfOX2ySbdIAAAREVJAPRKbafmLl-p9ujMIoFmCOnVm49AFkPY4rf-X-ZC_y1YQ26k8c5ZVJGTm8QGx28B9sVurARrPZEEg8yvtXdzJ60D_ujNPn8_rDrTvJXO3Hy0atr2KZIRvhsQoDPujgjFxe9N5rJF4x_wCh8b-EQ0es4vp8P7IP9ZGJRczuBxX8cuO8E.2KcpNUR51irCcc7hIB-XQ1iWJnoAHJ59LEnis4NbBGs&dib_tag=se&keywords=vegan+burger+patty&qid=1712075896&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank"><img src="c1.jpg" alt="Item 1"></a>
+            <p class="desci">Tata Simply Better Plant-Based Nuggets, Tastes just Like Chicken, 270g</p>
+            <a href="https://www.amazon.in/Tata-Simply-Better-Plant-Based-Nuggets/dp/B0B46FQDP8/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.TZgyHrmSIJJrLTdqu2z3srqQQTdVQ_oZlA8zvug-5LdgHGpqsPitshBHqA3_43A_7nWyXnwtZ6U8JvM2QJGHmGGRhPLAzhpW2pClxGQHBJarfOX2ySbdIAAAREVJAPRKbafmLl-p9ujMIoFmCOnVm49AFkPY4rf-X-ZC_y1YQ26k8c5ZVJGTm8QGx28B9sVurARrPZEEg8yvtXdzJ60D_ujNPn8_rDrTvJXO3Hy0atr2KZIRvhsQoDPujgjFxe9N5rJF4x_wCh8b-EQ0es4vp8P7IP9ZGJRczuBxX8cuO8E.2KcpNUR51irCcc7hIB-XQ1iWJnoAHJ59LEnis4NbBGs&dib_tag=se&keywords=vegan+burger+patty&qid=1712075896&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0CPPYCKJ6?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_YKCV0BYVDBDXJK5ZN53T&th=1"
+                target="_blank"><img src="c2.jpg" alt="Item 2"></a>
+            <p class="desci">Hello Tempayy Tandoori Tempeh Thins | Value Pack of 6 | Protein Rich | Heat & Eat | More
+                Nutritious Than Paneer & Tofu | High Fibre</p>
+            <a href="https://www.amazon.in/dp/B0CPPYCKJ6?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_YKCV0BYVDBDXJK5ZN53T&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0CL7QSRPM?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_YA88J5VT67A5CVMM1B8G"
+                target="_blank"><img src="c3.jpg" alt="Item 3"></a>
+            <p class="desci">Tender Jackfruit Ready to Cook 1kg Pack</p><br>
+            <a href="https://www.amazon.in/dp/B0CL7QSRPM?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_YA88J5VT67A5CVMM1B8G"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0BCGJBBTY?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_T2V8ZTXMVZHBN4G5KQMQ"
+                target="_blank"><img src="c4.jpg" alt="Item 4"></a>
+            <p class="desci">Wakao American Herbs Sausage Vegan Meat (100% Plant Based Jack Fruit Meat) Cook & Eat
+                (200g)</p>
+            <a href="https://www.amazon.in/dp/B0BCGJBBTY?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_T2V8ZTXMVZHBN4G5KQMQ"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B07GGL9DTB?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_54GTFSVBCY7EKWDDSV11"
+                target="_blank"><img src="c5.jpg" alt="Item 5"></a>
+            <p class="desci">GoodDot Proteiz - Protein Chunks | 100% Vegetarian| High in Nutrition |No Cholesterol |
+                Mock Meat |Plant Based Protein Rich Meat | Vegan Meat | Better Than Regular Soya Chunks (Pack of 2, 175
+                g each)</p>
+            <a href="https://www.amazon.in/dp/B07GGL9DTB?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_54GTFSVBCY7EKWDDSV11"
+                target="_blank"> <button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B09TRC5QQN?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_PMZ2YDM6JMD3FNQ2VXC3"
+                target="_blank"><img src="c6.jpg" alt="Item 6"></a>
+            <p class="desci">DDR Mushroom Spicy Curry Masala (Ready to Cook) 120 gm</p>
+            <a href="https://www.amazon.in/dp/B09TRC5QQN?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_PMZ2YDM6JMD3FNQ2VXC3"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0BBGM3JXV?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_Q3VJ04F7SDY3DWTQPCRW"
+                target="_blank"><img src="c7.jpg" alt="Item 7"></a>
+            <p class="desci">Wakao Combo Pack of 2 Butter Jack Vegan Meat (100% Plant Based Rich Source of Fibre)- Heat
+                and Eat - 600g</p>
+            <a href="https://www.amazon.in/dp/B0BBGM3JXV?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_Q3VJ04F7SDY3DWTQPCRW"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B08D6JBQR1?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_06RAJK4XM0WA14EJM8KZ"
+                target="_blank"><img src="c8.jpg" alt="Item 8"></a>
+            <p class="desci">Urban Platter Vanilla Pancake Mix, 650g [Goodness of Millets, Wheat Free, Just Add Water]
+            </p>
+            <a href="https://www.amazon.in/dp/B08D6JBQR1?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_06RAJK4XM0WA14EJM8KZ"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B08J8QM223?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_W3MVBVT80ZPER6GB8XD4&th=1"
+                target="_blank"><img src="c9.jpg" alt="Item 9"></a>
+            <p class="desci">MAGGI Masala-ae-Magic Vegetable Masala, All in One | 120g Pouch (6g x 20 Sachets)</p>
+            <a href="https://www.amazon.in/dp/B08J8QM223?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_W3MVBVT80ZPER6GB8XD4&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0761TK27S?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_1K2CGXDQN9BTQKWYRNR3&th=1"
+                target="_blank"><img src="c10.jpg" alt="Item 10"></a>
+            <p class="desci">Urban Platter Vegetable Bouillon and Broth Powder, 200g [ Anytime Convenience | Prepares
+                Quickly | Vibrant Flavours | Ideal Seasoning and Condiment]</p>
+            <a href="https://www.amazon.in/dp/B0761TK27S?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_1K2CGXDQN9BTQKWYRNR3&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="Tata Simply Better Plant-Based Keema, Tastes Just Like Chicken, Ready to Eat, No Added Preservatives, Trans Fat Free, Source of Protein, Plant Based Meat, Mock Meat, Vegan Meat, 250g"
+                target="_blank"><img src="c11.jpg" alt="Item 11"></a>
+            <p class="desci">Tata Simply Better Plant-Based Keema, Tastes Just Like Chicken, Ready to Eat, No Added
+                Preservatives, Trans Fat Free, Source of Protein, Plant Based Meat, Mock Meat, Vegan Meat, 250g</p>
+            <a href="Tata Simply Better Plant-Based Keema, Tastes Just Like Chicken, Ready to Eat, No Added Preservatives, Trans Fat Free, Source of Protein, Plant Based Meat, Mock Meat, Vegan Meat, 250g"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B09RQNY2JD?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_CXEE0EHCDHH7JX4DF8PB"
+                target="_blank"><img src="c12.jpg" alt="Item 12"></a>
+            <p class="desci">MOM - Meal of the Moment Fried Rice with Schezwan Gravy (Pack of 3) | All Natural, 100%
+                Vegetarian, Vegan, Gluten Free, Ready to Eat, Instant Food, Just Add Hot Water</p>
+            <a href="https://www.amazon.in/dp/B09RQNY2JD?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_CXEE0EHCDHH7JX4DF8PB"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B00S4TRVBA?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_P9PECY1786S3D36MX1ET"
+                target="_blank"><img src="c13.jpg" alt="Item 13"></a>
+            <p class="desci">MTR Ready to Eat Vegetable Pulao, 250g</p>
+            <a href="https://www.amazon.in/dp/B00S4TRVBA?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_P9PECY1786S3D36MX1ET"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B08JLQGG61?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_J1A0MFR01EMRCZHKHKQ1"
+                target="_blank"><img src="c14.jpg" alt="Item 14"></a>
+            <p class="desci">Chokhi Dhani Pani Puri Chaat | Ready To Eat Food Products | 220 Grams | 50 Puris| Instant
+                Indian Food | Travel Friendly Food | Indian Meals | GolGappa Combo | Street Food | Instant Kit</p>
+            <a href="https://www.amazon.in/dp/B08JLQGG61?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_J1A0MFR01EMRCZHKHKQ1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B07GX6VWML?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_T3FG9E7T6RYKZ4J01HVZ"
+                target="_blank"><img src="c15.jpg" alt="Item 15"></a>
+            <p class="desci">Kohinoor Authentic Basmati Biryani Kit, Hyderabadi | Easy 3-Step Recipe | Ready To Cook
+                Biryani, 339g</p>
+            <a href="https://www.amazon.in/dp/B07GX6VWML?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_T3FG9E7T6RYKZ4J01HVZ"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B06XY11QTL?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_91JQ2K7Q1F109YFTR7G1"
+                target="_blank"><img src="c16.jpg" alt="Item 16"></a>
+            <p class="
+             desci">MTR 3 Mins Breakfast Vegetable Upma Pouch 60 g</p>
+            <a href="https://www.amazon.in/dp/B06XY11QTL?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_91JQ2K7Q1F109YFTR7G1"
+                target="_blank"> <button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0B5VT3CK5?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_XKRBB0P872KK94E7GRKS"
+                target="_blank"><img src="c17.jpg" alt="Item 17"></a>
+            <p class="desci">INSTAFOOD Gujarati Dal Dhokli | Ready to Eat & Cook Meal | 3-4 Servings |Pack of 1 (200g)|
+                After Cooking Gets 1.2KG to Serve | Zip Lock Packaging | Vegetarian Meal| Just Add Water and Cook</p>
+            <a href="https://www.amazon.in/dp/B0B5VT3CK5?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_XKRBB0P872KK94E7GRKS"
+                target="_blank"> <button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B07D5FG9R5?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_HHXJX0GVGJA9EWGNRXGE&th=1"
+                target="_blank"><img src="c18.jpg" alt="Item 18"></a>
+            <p class="desci">Saffola Masala Oats | Tasty Evening Snack| Healthy Snack| Classic Masala| 500g</p>
+            <a href="https://www.amazon.in/dp/B07D5FG9R5?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_HHXJX0GVGJA9EWGNRXGE&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B07D5FG9R5?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_HHXJX0GVGJA9EWGNRXGE&th=1"
+                target="_blank"><img src="c19.jpg" alt="Item 19"></a>
+            <p class="desci">Tata Sampann Yumside Ready to Cook Sambar Paste- Thanjavur Style, 150g, Instant Food, Ready
+                in 20 min, NO Preservatives, NO Added Artificial Colours & Flavours, Pack of 1</p>
+            <a href="https://www.amazon.in/dp/B07D5FG9R5?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_HHXJX0GVGJA9EWGNRXGE&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B07T5984BK?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_WZFS0NSPZ0ZH41VYFXQA"
+                target="_blank"><img src="c20.jpg" alt="Item 20"></a>
+            <p class="desci">Farm Veda Healthy and Tasty Ready to Eat Instant Upma Mix (250G) ( Pack of 2)</p>
+            <a href="https://www.amazon.in/dp/B07T5984BK?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_WZFS0NSPZ0ZH41VYFXQA"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B082X89NQ6?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_2FEWTQH0ER8032MRZFZ6_1"
+                target="_blank"><img src="c21.jpg" alt="Item 21"></a>
+            <p class="desci">Amajain Instant Sattvik Healthy Idli Sambar, Ready-to-Eat, No Added Preservatives, No Added
+                Flavours, Jain-Friendly, 90g (Pack of 2)</p>
+            <a href="https://www.amazon.in/dp/B082X89NQ6?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_2FEWTQH0ER8032MRZFZ6_1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B009M4TXV2?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_Q2PZRXF84213VBB2HVTJ"
+                target="_blank"><img src="c22.jpg" alt="Item 22"></a>
+            <p class="desci">MTR Uttappam Mix 500g</p>
+            <a href="https://www.amazon.in/dp/B009M4TXV2?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_Q2PZRXF84213VBB2HVTJ"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0CXLZH4H7?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_9885H46HPHCFMM2R19AC"
+                target="_blank"><img src="c23.jpg" alt="Item 23"></a>
+            <p class="desci
+             ">Thakar Kitchen Ready to Eat Bharela Bataka (300g) | Just Heat and Eat | Serves 2 | No Added Preservative
+                & Colours | Pure Veg Indian Food</p>
+            <a href="https://www.amazon.in/dp/B0CXLZH4H7?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_9885H46HPHCFMM2R19AC"
+                target="_blank"> <button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B00OO7C9MW?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_J7S86P2QACHDPF7JJC3N"
+                target="_blank"><img src="c24.jpg" alt="Item 24"></a>
+            <p class="desci">MAGGI 2-minute Instant Noodles, Masala Noodles with Goodness of Iron, Made with Choicest
+                Quality Spices, Favourite Masala Taste, 280 grams Pouch</p>
+            <a href="https://www.amazon.in/dp/B00OO7C9MW?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_J7S86P2QACHDPF7JJC3N"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0825C2F32?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_SWA920K4DK68Z6HPGTWT"
+                target="_blank"><img src="c25.jpg" alt="Item 25"></a>
+            <p class="desci
+             ">MTR 3 Minute Breakfast - Seviyan Upma Pouch, 160 g</p>
+            <a href="https://www.amazon.in/dp/B0825C2F32?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_SWA920K4DK68Z6HPGTWT"
+                target="_blank"> <button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B06VT34WR9?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_GW43B9JP2TH3XVCHS9AW"
+                target="_blank"><img src="c26.jpg" alt="Item 26"></a>
+            <p class="desci">MTR 3 Mins Breakfast Poha Cuppa 80g</p>
+            <a href="https://www.amazon.in/dp/B06VT34WR9?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_GW43B9JP2TH3XVCHS9AW"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Mill%C3%A9-Blueberry-Pancake-Eggless-Protein/dp/B0BJJB3YVR/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.5v4Ckfoo515NUAtQoB89z_JzXMvj7OC91zPuKZ2FE-2E5iJvs5zOcr70zFBSftYRCcHcOF0xH8r8oRFNfrOns8OXTOvqRBLzXq2i9qpxORcypoY5n0pkgtUpnuHDGs21a7bDe8XOxEDN6Uh1LXWEXuRMuE6R4Su_f9shCQkrkIHVQ7Cvhu6l1xdV9TUw7z1dEAQ_UtB3EKdzwG-bG2rgrw7ISaKzaK_AjnL1UhVAWfw9xptQFo7Yjuy1lLqvMEEytSdrHhc6JvcZ0nSq4yfJnsnPqMGG_RqmcmtYvnhrUv4.fJtwx9VL3tvmZEsWByRMgjmxquJWOzQVI866QmxUxVE&dib_tag=se&keywords=vegan%2Bpancake%2Bmix&qid=1712223305&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+                target="_blank"><img src="c27.jpg" alt="Item 27"></a>
+            <p class="desci">Mille Blueberry Millet Pancake | NO MAIDA | Eggless | Gluten Free | High Plant Protein |
+                Low Carbs | Low GI Millet Grain | No Refined Sugar | 250 grams</p>
+            <a href="https://www.amazon.in/Mill%C3%A9-Blueberry-Pancake-Eggless-Protein/dp/B0BJJB3YVR/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.5v4Ckfoo515NUAtQoB89z_JzXMvj7OC91zPuKZ2FE-2E5iJvs5zOcr70zFBSftYRCcHcOF0xH8r8oRFNfrOns8OXTOvqRBLzXq2i9qpxORcypoY5n0pkgtUpnuHDGs21a7bDe8XOxEDN6Uh1LXWEXuRMuE6R4Su_f9shCQkrkIHVQ7Cvhu6l1xdV9TUw7z1dEAQ_UtB3EKdzwG-bG2rgrw7ISaKzaK_AjnL1UhVAWfw9xptQFo7Yjuy1lLqvMEEytSdrHhc6JvcZ0nSq4yfJnsnPqMGG_RqmcmtYvnhrUv4.fJtwx9VL3tvmZEsWByRMgjmxquJWOzQVI866QmxUxVE&dib_tag=se&keywords=vegan%2Bpancake%2Bmix&qid=1712223305&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Tata-Simply-Better-Plant-Based-Nuggets/dp/B0B46FQDP8/ref=sr_1_2_sspa?adgrpid=1329311151626207&dib=eyJ2IjoiMSJ9.HJE6jjZYjgmss19uDIYpNWRXImOlnQLTVk7gc08fIbprJ2KJQFVUK87z-NgA0g72nV1sLK_WCgqrH_6tnZcRP30pXGRQyPwntuqDyEf0Lfn1bFKLslsJH7hoxQuiyEbuVHWgS3LdN3UKNi9MskEVbmR-PCCp17tmkyJJqOZWvzFhShwxA5v1bmCFwwp7ZDkTYjm0ZmrSwbDjf1KnIWkzJ1VykTYVPRD6aQ8aLyT32_oweFrf00xTw1C8T7i26c-BxBMyp3hb4R6xDZkSu63YwffvR13oJ8G21NGFAaD_Fac.IdcBgbvgUdYHudS0fQ4I-FBPWq6U2vG74RQpvdmR7eo&dib_tag=se&hvadid=83082206756880&hvbmt=bb&hvdev=c&hvlocphy=157776&hvnetw=o&hvqmt=b&hvtargid=kwd-83082823753952%3Aloc-90&hydadcr=19582_2181381&keywords=blue+tribe+plant+based+meat&qid=1712223550&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank"><img src="c28.jpg" alt="Item 28"></a>
+            <p class="desci
+             ">Tata Simply Better Plant-Based Nuggets, Tastes just Like Chicken, 270g</p>
+            <a href="https://www.amazon.in/Tata-Simply-Better-Plant-Based-Nuggets/dp/B0B46FQDP8/ref=sr_1_2_sspa?adgrpid=1329311151626207&dib=eyJ2IjoiMSJ9.HJE6jjZYjgmss19uDIYpNWRXImOlnQLTVk7gc08fIbprJ2KJQFVUK87z-NgA0g72nV1sLK_WCgqrH_6tnZcRP30pXGRQyPwntuqDyEf0Lfn1bFKLslsJH7hoxQuiyEbuVHWgS3LdN3UKNi9MskEVbmR-PCCp17tmkyJJqOZWvzFhShwxA5v1bmCFwwp7ZDkTYjm0ZmrSwbDjf1KnIWkzJ1VykTYVPRD6aQ8aLyT32_oweFrf00xTw1C8T7i26c-BxBMyp3hb4R6xDZkSu63YwffvR13oJ8G21NGFAaD_Fac.IdcBgbvgUdYHudS0fQ4I-FBPWq6U2vG74RQpvdmR7eo&dib_tag=se&hvadid=83082206756880&hvbmt=bb&hvdev=c&hvlocphy=157776&hvnetw=o&hvqmt=b&hvtargid=kwd-83082823753952%3Aloc-90&hydadcr=19582_2181381&keywords=blue+tribe+plant+based+meat&qid=1712223550&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.com/WFM-365-Sausage-Pork-Chorizo/dp/B074VDFGGQ/ref=sr_1_2?dib=eyJ2IjoiMSJ9.fogZUxnOe1_d49puZ9st0m49si4HmPDi4j77ZMBIeCVywGPRoeKA3l7Sny55forUbR_-0ngk_d_lgphaoLC3xL7pBm-Ek0idYs1YsAlKCfo.EgNHBiFJW6HN7Vb_Sciu4A-DACg3Sm9mJ7BXNIcSYEo&dib_tag=se&keywords=vegan+chorizo+sausage&qid=1712224227&sr=8-2"
+                target="_blank"><img src="c29.jpg" alt="Item 29"></a>
+            <p class="desci">Wellshire Farms, All Natural Smoked Chorizo Sausage, 12 oz</p>
+            <a href="https://www.amazon.com/WFM-365-Sausage-Pork-Chorizo/dp/B074VDFGGQ/ref=sr_1_2?dib=eyJ2IjoiMSJ9.fogZUxnOe1_d49puZ9st0m49si4HmPDi4j77ZMBIeCVywGPRoeKA3l7Sny55forUbR_-0ngk_d_lgphaoLC3xL7pBm-Ek0idYs1YsAlKCfo.EgNHBiFJW6HN7Vb_Sciu4A-DACg3Sm9mJ7BXNIcSYEo&dib_tag=se&keywords=vegan+chorizo+sausage&qid=1712224227&sr=8-2"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/French-Saucisson-Spanish-Chorizo-Turkish/dp/B0BXHHD46C/ref=sr_1_1_sspa?adgrpid=1320515074419591&dib=eyJ2IjoiMSJ9.n4661w-2q6efIphjTs2P0WpweT9Ndl4R-24HnxG5TU2T88KuAZzINcyhrPhbR9VJu63sm6Oi9hXDJFsaIXcgQAKdqZXEWN89oLjFqAYvfc5WCAmBKvfMFZcQSFzvVNrpssvi-KpOHldMBb1fph-vLWhX04MBZ3Rcxp0ACaCToUEXxWwxvaek2yDHPqEhvc88.d-KcZlwjAPlIe3-fdFG8KTUuxJGmu7bV2Ke74ADl00A&dib_tag=se&hvadid=82532462427441&hvbmt=bp&hvdev=c&hvlocphy=155252&hvnetw=o&hvqmt=p&hvtargid=kwd-82533070637959%3Aloc-90&hydadcr=23619_2291921&keywords=sausage+amazon&qid=1712224050&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank"><img src="c30.jpg" alt="Item 30"></a>
+            <p class="desci">French Saucisson + Spanish Chorizo + Turkish Sujuk Combo (Pack of 1 each)</p>
+            <a href="https://www.amazon.in/French-Saucisson-Spanish-Chorizo-Turkish/dp/B0BXHHD46C/ref=sr_1_1_sspa?adgrpid=1320515074419591&dib=eyJ2IjoiMSJ9.n4661w-2q6efIphjTs2P0WpweT9Ndl4R-24HnxG5TU2T88KuAZzINcyhrPhbR9VJu63sm6Oi9hXDJFsaIXcgQAKdqZXEWN89oLjFqAYvfc5WCAmBKvfMFZcQSFzvVNrpssvi-KpOHldMBb1fph-vLWhX04MBZ3Rcxp0ACaCToUEXxWwxvaek2yDHPqEhvc88.d-KcZlwjAPlIe3-fdFG8KTUuxJGmu7bV2Ke74ADl00A&dib_tag=se&hvadid=82532462427441&hvbmt=bp&hvdev=c&hvlocphy=155252&hvnetw=o&hvqmt=p&hvtargid=kwd-82533070637959%3Aloc-90&hydadcr=23619_2291921&keywords=sausage+amazon&qid=1712224050&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Vegan-Burgers-Burritos-Delicious-Everyday/dp/1624144799/ref=sr_1_1?dib=eyJ2IjoiMSJ9._yVnr5yWtwWlQy9OMxrlDBNxKW_nmNlI4wlEuqgT4IOLRXcMsHPSlm4GmW9v-rr0VWHzZHrwyx8ck8OzQiMxMeBGWL1zKJn8YyfTAKlYVRoyvRKQVwWItZGg_cYrgIFlYRDI9d9elEa0iyUUYa8h1lDFzWQtGAZMoUXJPkjmmcT-cULDYhj1XX2oRp2zzBBiTCVpE-YZ0mFvl611Ow3WTJ-tX3Fho_yr7jUFXbLoT3ihC4cppLU1b5iWtzbNQwmGld3VK__lMTGuHNQZY-jJKg82PND8Db824771-mkQrmc.Lw7acNiGPulgKEF_s9phd_ZXvWNNardMEQAVK0-rdnE&dib_tag=se&keywords=vegan+burger&qid=1712224806&sr=8-1"
+                target="_blank"><img src="c31.jpg" alt="Item 31"></a>
+            <p class="desci">Vegan Burgers and Burritos: Easy and Delicious Whole Food Recipes for the Everyday Cook:
+                Plant-Based Yum Between Two Buns...Or in a Tortilla Paperback </p>
+            <a href="https://www.amazon.in/Vegan-Burgers-Burritos-Delicious-Everyday/dp/1624144799/ref=sr_1_1?dib=eyJ2IjoiMSJ9._yVnr5yWtwWlQy9OMxrlDBNxKW_nmNlI4wlEuqgT4IOLRXcMsHPSlm4GmW9v-rr0VWHzZHrwyx8ck8OzQiMxMeBGWL1zKJn8YyfTAKlYVRoyvRKQVwWItZGg_cYrgIFlYRDI9d9elEa0iyUUYa8h1lDFzWQtGAZMoUXJPkjmmcT-cULDYhj1XX2oRp2zzBBiTCVpE-YZ0mFvl611Ow3WTJ-tX3Fho_yr7jUFXbLoT3ihC4cppLU1b5iWtzbNQwmGld3VK__lMTGuHNQZY-jJKg82PND8Db824771-mkQrmc.Lw7acNiGPulgKEF_s9phd_ZXvWNNardMEQAVK0-rdnE&dib_tag=se&keywords=vegan+burger&qid=1712224806&sr=8-1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Vegan-Fast-Food-Copycat-Milkshakes/dp/0760375852/ref=sr_1_5?dib=eyJ2IjoiMSJ9._yVnr5yWtwWlQy9OMxrlDBNxKW_nmNlI4wlEuqgT4IOLRXcMsHPSlm4GmW9v-rr0VWHzZHrwyx8ck8OzQiMxMeBGWL1zKJn8YyfTAKlYVRoyvRKQVwWItZGg_cYrgIFlYRDI9d9elEa0iyUUYa8h1lDFzWQtGAZMoUXJPkjmmcT-cULDYhj1XX2oRp2zzBBiTCVpE-YZ0mFvl611Ow3WTJ-tX3Fho_yr7jUFXbLoT3ihC4cppLU1b5iWtzbNQwmGld3VK__lMTGuHNQZY-jJKg82PND8Db824771-mkQrmc.Lw7acNiGPulgKEF_s9phd_ZXvWNNardMEQAVK0-rdnE&dib_tag=se&keywords=vegan+burger&qid=1712224806&sr=8-5"
+                target="_blank"><img src="c32.jpg" alt="Item 32"></a>
+            <p class="desci">Vegan Burgers and Burritos: Easy and Delicious Whole Food Recipes for the Everyday Cook:
+                Plant-Based Yum Between Two Buns...Or in a Tortilla Paperback </p>
+            <a href="https://www.amazon.in/Vegan-Fast-Food-Copycat-Milkshakes/dp/0760375852/ref=sr_1_5?dib=eyJ2IjoiMSJ9._yVnr5yWtwWlQy9OMxrlDBNxKW_nmNlI4wlEuqgT4IOLRXcMsHPSlm4GmW9v-rr0VWHzZHrwyx8ck8OzQiMxMeBGWL1zKJn8YyfTAKlYVRoyvRKQVwWItZGg_cYrgIFlYRDI9d9elEa0iyUUYa8h1lDFzWQtGAZMoUXJPkjmmcT-cULDYhj1XX2oRp2zzBBiTCVpE-YZ0mFvl611Ow3WTJ-tX3Fho_yr7jUFXbLoT3ihC4cppLU1b5iWtzbNQwmGld3VK__lMTGuHNQZY-jJKg82PND8Db824771-mkQrmc.Lw7acNiGPulgKEF_s9phd_ZXvWNNardMEQAVK0-rdnE&dib_tag=se&keywords=vegan+burger&qid=1712224806&sr=8-5"
+                target="_blank"> <button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

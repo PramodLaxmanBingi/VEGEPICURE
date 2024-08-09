@@ -1,0 +1,497 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(82, 242, 138, 0.3);
+    padding-left: 20px; /* Adjust padding to move items left */
+/* } */ 
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition: all 0.4s;
+    font-family: "Italiana", sans-serif;
+}
+
+.nav-item a:hover {
+    color: rgb(222, 147, 81);
+}
+/* -----just try */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding-left: 20px;
+    /* Adjust padding to move items left */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition: all 0.4s;
+    font-family: "Italiana", sans-serif;
+}
+
+.nav-item a:hover {
+    color: rgb(20, 219, 20);
+}
+
+
+.search {
+    height: 45px;
+    outline: none;
+    border: 2px solid #085b08bc;
+    background-color: transparent;
+    border-radius: 20px 0px 0px 20px;
+    border-right: none;
+    box-shadow: inset;
+  }
+  .search:focus {
+    outline: none;
+    box-shadow: none;
+    border: #085b08bc;
+    border-right: none;
+  }
+  .search-button {
+    height: 38px; /* Match the height of the search input */
+    border-radius: 0px 20px 20px 0px; /* Adjust border radius for the button */
+    }
+  .btn1 {
+    height: 38px;
+    outline: none;
+    border: none;
+    background-color: #085b08bc;
+    color: aliceblue;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.4s;
+  }
+  .btn1:hover {
+    background-color: #085b08bc;
+  }
+  .bi-bag-check {
+    font-size: 26px;
+    color: black;
+    cursor: pointer;
+    padding-top: 3px;
+    transition: all 0.4s;
+  }
+  .bi-bag-check:hover {
+    color: #085b08bc;
+  }
+
+/* =========================three boxes =========================== */
+
+.bo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    height: 500px;
+    background-color: white;
+}
+
+.box1 {
+    height: 450px;
+    margin-left: 20px;
+    width: 600px;
+}
+
+.box1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.box3 {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin: 0px 20px;
+
+}
+
+.box2 {
+    height: 200px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.box2 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* boxes ki shadow effect kosam */
+/* Shadow effect for images */
+.shadow-image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.shadow-image:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Click effect */
+.shadow-image:active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/*===================================main======================== */
+.main {
+    background: url(main.avif)no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.main h1 {
+    font-size: 5rem;
+    font-family: "Italiana", sans-serif;
+}
+
+.main p:nth-child(1) {
+    font-size: 18px;
+    font: weight 500px;
+}
+
+.main p:nth-child(2) {
+    font-size: 18px;
+    color: black;
+}
+
+p.a {
+    text-align-last: left;
+}
+
+.mbtn1 {
+    height: 40px;
+    width: 25%;
+    outline: none;
+    border: none;
+    color: white;
+    background: #085b08bc;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.mbn1:hover {
+    color: rgb(20, 219, 20);
+}
+
+.mbtn2 {
+    height: 50px;
+    width: 15%;
+    outline: none;
+    background-color: transparent;
+    color: #085b08bc;
+    border: 1px solid #085b08bc;
+    ;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.mbtn2:hover {
+    background-color: #085b08bc;
+    border: none;
+    color: azure;
+}
+
+.line {
+    height: 6px;
+    width: 40%;
+    background: #085b08bc;
+    display: inline-block;
+    margin-left: 55px;
+}
+
+/* read more kodite content motham chupiyadaniki */
+.full-content {
+    display: none;
+    transition: max-height 0.5s ease-out;
+}
+
+.show .full-content {
+    display: block;
+}
+
+.hide .short-content {
+    display: none;
+}
+.left-aligned-caption {
+    text-align: left;
+    position: absolute;
+    top: 20%; /* Adjust as needed */
+    left: 5%; /* Adjust as needed */
+    width: 40%; /* Adjust as needed */
+    color: #120f0fe0; /* Ensure the text is readable over the image */
+    padding: 20px; /* Add some padding for better readability */
+  }
+  
+  .line {
+    border-bottom: 2px solid rgb(4, 14, 4); /* Adjust as needed */
+    width: 200px; /* Adjust as needed */
+    margin-top: 10px; /* Adjust as needed */
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  .carousel-inner p{
+    color: rgb(13, 19, 14);
+  }
+  .carousel-inner h1{
+    color: black;
+    font-family: "Italiana", sans-serif;
+    font-size:70px;
+  }
+
+/*======================================about=======================================================*/
+.About {
+    background: url(About.jpg)no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+}
+
+.About h1 {
+    font-size: 3rem;
+    font-family: "Italiana", sans-serif
+}
+
+.About p:nth-child(1) {
+    font-size: 18px;
+    font: weight 500px;
+}
+
+.About p:nth-child(2) {
+    font-size: 18px;
+    color: black;
+}
+
+.About .line {
+    height: 6px;
+    width: 40%;
+    background: #085b08bc;
+    display: inline-block;
+    margin-left: -3px;
+}
+
+/* ----kotha about additional ga----- */
+
+
+/*========product=========*/
+.Product h1 {
+    font-size: 3rem;
+    font-family: "Italiana", sans-serif;
+}
+
+.Product p:nth-child(1) {
+    font-size: 18px;
+    font: weight 500px;
+}
+
+.Product p:nth-child(2) {
+    font-size: 18px;
+    color: gray;
+}
+
+.star {
+    text-align: end;
+    color: orange;
+}
+
+.Product .card-body {
+    border: 1px dashed rgb(175, 172, 172);
+}
+
+.head1 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.per1 {
+    color: rgb(175, 172, 172);
+}
+
+.btnc {
+    height: 50px;
+    width: 50%;
+    outline: none;
+    border: none;
+    color: white;
+    background: #085b08bc;
+    border-radius: 100px;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.4s;
+}
+
+.btnc:hover {
+    outline: none;
+    border: 1px solid #085b08bc;
+    color: #085b08bc;
+    background: transparent;
+    border-radius:50px;
+}
+
+.btn {
+    height: 50px;
+    width: 100%;
+    border-radius: 100px;
+    display: block;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    color: azure;
+    background-color: black;
+    text-decoration: none;
+}
+
+.card:hover {
+    background-color: pink;
+}
+
+.card img {
+    max-width: 100%;
+    height: 35vh;
+    width: 25vw;
+    align-self: center;
+}
+
+.desci {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.desci:hover {
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: visible;
+}
+
+/*---------------------------------------Discount----------*/
+.Discount {
+    background: #085b08bc;
+    color: white;
+}
+
+.dbtn {
+    height: 50px;
+    width: 75%;
+    outline: none;
+    border: none;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: block;
+    font-weight: lighter;
+    transition: all 0.4s;
+}
+
+.dbtn:hover {
+    background-color: wheat;
+}
+
+/*---=========store==========*/
+.Store h1 {
+    font-size: 3rem;
+    font-family: "Italiana", sans-serif;
+}
+
+.Store p:nth-child(1) {
+    font-size: 18px;
+    font: weight 500px;
+}
+
+.Store p:nth-child(2) {
+    font-size: 18px;
+    color: black;
+}
+
+.Store i {
+    font-size: 45px;
+    ;
+}
+
+.Store .card {
+    border-radius: 0;
+    border: none;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.Store .card:hover {
+    background-color: #085b08bc;
+    color: white;
+}
+
+.Store .card:hover .per1 {
+    color: white;
+}
+
+.Store .line {
+    height: 6px;
+    width: 40%;
+    background: #085b08bc;
+    display: inline-block;
+    margin-left: -3px;
+}
+
+/*===============Contact=========*/
+.Contact {
+    background: url(ContactUs.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.Contact h1 {
+    font-size: 5rem;
+    font-family: "Italiana", sans-serif;
+}

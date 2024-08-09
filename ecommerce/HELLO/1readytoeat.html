@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready To Eat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="import" href="C:\Users\swags\OneDrive\Desktop\ecommerce\HELLO\1readytoeat.html">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
+        /* -------navbar-code ------- */
+
+
+        body {
+            background: linear-gradient(to right, #f7f6f5, #fefaf8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .heading {
+            width: 100%;
+            text-align: center;
+            margin: 0 0;
+        }
+
+        .head {
+            margin: 10px;
+            height: 10.5vh;
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            /* text-align: center; */
+            background: linear-gradient(135deg, #f2bea0 0%, #fda085 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .head::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            z-index: -1;
+            filter: blur(20px);
+            opacity: 0.7;
+            transition: all 0.5s;
+        }
+
+        .head:hover::before {
+            filter: blur(25px);
+            opacity: 1;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* above is-----------new code --------------- */
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .item {
+            height: auto;
+            width: 20vw;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 20px;
+            border: 1px solid #fda085;
+
+        }
+
+        .item a {
+            text-decoration: none;
+        }
+
+        .btn {
+            height: 50px;
+            width: 100%;
+            border-radius: 50px;
+            display: block;
+            transition: all 0.4s;
+
+        }
+
+        .btn:hover {
+            color: azure;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        .item:hover {
+            background-color: pink;
+        }
+
+        .item img {
+            max-width: 100%;
+            height: 35vh;
+            width: 25vw;
+            align-self: center;
+        }
+
+        .desci {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .desci:hover {
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- -----navbar adding-------- -->
+    <div class="heading">
+        <h1 class="head">Ready to eat <img src="dining.png" alt="" srcset="" width="60px" height="60px"></h1>
+    </div>
+
+
+    <div class="container">
+        <div class="item">
+            <a href="https://www.amazon.in/Khao-Project-Jalapeno-Friendly-Preservative/dp/B0CKTGB3WJ?th=1"
+                target="_blank"><img src="i1.jpg" alt="Item 1"></a>
+            <p class="desci">The Khao Project On The Go Hummus Snack Pack| Parsley Jalapeno Hummus and Baked Pita Chips
+                Combo (180 gms)| healthy snacks for kids|Travel Friendly-ProteinRich </p>
+            <a href="https://www.amazon.in/Khao-Project-Jalapeno-Friendly-Preservative/dp/B0CKTGB3WJ?th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Foodio-fit-Vacuum-Beetroot-Veggie-Healthy /dp/B0CK5LC3Z6/ref=sr_1_8?adgrpid=1323813606686762&dib=eyJ2IjoiMSJ9.-mYmt4ShKKdxrmRQ-l365hhPBQY7THmGLV6qez2WJH2qVU8mtAx8fx7KjdzDAKkI9gq0taPEvhIskQifTltdk15X95RiMaZnkuSvGpispG1xzn8hYPB5zMsW3zU6Of_dMngiaHRclIc-oa8sWPgsd5kvSwzxaev-vaLXQZarMTyQtu-oteieuOOVOdJRgFWx0oNJRKS-c3X12FyKdsTZw8r8yuf2miO9hmHiQOxomYFdw0Bhs26XcyIxHNkdrVK1UQfPkVTZhb8xW2sdL0clv1PFRWA8hGFSR3NDkwsmNFY.Niqh2AB4qvMAS8wP_1wTcIiTIA8GdL6BiQwzci4GHpI&dib_tag=se&hvadid=82738609219802&hvbmt=bb&hvdev=c&hvlocphy=143931&hvnetw=o&hvqmt=b&hvtargid=kwd-82739226483629%3Aloc-90&hydadcr=603_2444939&keywords=healthy+beetroot+chips&qid=1712230002&sr=8-8"
+                target="_blank"><img src="i2.jpg" alt="Item 2"></a>
+            <p class="desci">Foodio.fit Vacuum Fried Beetroot Chips 25g, Veggie Sticks 25g, & Sweet Potato Chips 32g |
+                Healthy and Tasty Snack | Ready To Eat</p>
+            <a href="https://www.amazon.in/Foodio-fit-Vacuum-Beetroot-Veggie-Healthy/dp/B0CK5LC3Z6/ref=sr_1_8?adgrpid=1323813606686762&dib=eyJ2IjoiMSJ9.-mYmt4ShKKdxrmRQ-l365hhPBQY7THmGLV6qez2WJH2qVU8mtAx8fx7KjdzDAKkI9gq0taPEvhIskQifTltdk15X95RiMaZnkuSvGpispG1xzn8hYPB5zMsW3zU6Of_dMngiaHRclIc-oa8sWPgsd5kvSwzxaev-vaLXQZarMTyQtu-oteieuOOVOdJRgFWx0oNJRKS-c3X12FyKdsTZw8r8yuf2miO9hmHiQOxomYFdw0Bhs26XcyIxHNkdrVK1UQfPkVTZhb8xW2sdL0clv1PFRWA8hGFSR3NDkwsmNFY.Niqh2AB4qvMAS8wP_1wTcIiTIA8GdL6BiQwzci4GHpI&dib_tag=se&hvadid=82738609219802&hvbmt=bb&hvdev=c&hvlocphy=143931&hvnetw=o&hvqmt=b&hvtargid=kwd-82739226483629%3Aloc-90&hydadcr=603_2444939&keywords=healthy+beetroot+chips&qid=1712230002&sr=8-8"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Organic-Roots-Classic-Traditional-Flavors/dp/B09VKYHKST/ref=pd_sbs_d_sccl_3_2/262-4914410-7820550?pd_rd_w=GTlBI&content-id=amzn1.sym.06e2aaf4-2afc-4124-9c99-6297c751b938&pf_rd_p=06e2aaf4-2afc-4124-9c99-6297c751b938&pf_rd_r=ZQKDVFDEADECX18M5X5M&pd_rd_wg=2IWPr&pd_rd_r=160dc5ca-f179-475e-ba7c-2f9b869eda0e&pd_rd_i=B09VKYHKST&th=1"
+                target="_blank"><img src="i3.jpg" alt="Item 3"></a>
+            <p class="desci">Organic Roots Classic Hummus | Traditional Flavors Pantry | 50g | Just Add Water, Instant
+                Food | Healthy Natural Ready to Eat | No MSG (Pack of 1)</p>
+            <a href="https://www.amazon.in/Organic-Roots-Classic-Traditional-Flavors/dp/B09VKYHKST/ref=pd_sbs_d_sccl_3_2/262-4914410-7820550?pd_rd_w=GTlBI&content-id=amzn1.sym.06e2aaf4-2afc-4124-9c99-6297c751b938&pf_rd_p=06e2aaf4-2afc-4124-9c99-6297c751b938&pf_rd_r=ZQKDVFDEADECX18M5X5M&pd_rd_wg=2IWPr&pd_rd_r=160dc5ca-f179-475e-ba7c-2f9b869eda0e&pd_rd_i=B09VKYHKST&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/TBH-Vegetable-Crunchies-Gluten-Free-Variants/dp/B084NXHH5Q/ref=sr_1_3_sspa?adgrpid=1322714094967097&dib=eyJ2IjoiMSJ9.XNrAT_E7lkzunPelfeTamJSNN5YczwwtYpKvnjwbMBdvWgqr5HdM9WKrLCISWhux57Y01-AZkrpWkkpNf_pLa6jmfvZ24708WgJ8aYbITb7vQRvMHKI4V7OloebCIT0LBUe3rN7hkFzZrUBluvj5DIM6P-idK0FGuiJBkSH4XNMMXcJ4W9yoLTtnlseg07xCcmbVmnvYODrND1xqdvV-ov_kBAWq8J2raTlEvvaKmAY.S9AOZRPc_UcTuFGmebogufx2dlTTpRKCSmLk18kpBXU&dib_tag=se&hvadid=82669890084963&hvbmt=bb&hvdev=c&hvlocphy=143931&hvnetw=o&hvqmt=b&hvtargid=kwd-82670511572571%3Aloc-90&hydadcr=28764_1954858&keywords=terra+vegetable+chips&qid=1712225427&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank"><img src="i4.webp" alt="Item 4"></a>
+            <p class="desci">TBH - To Be Honest Vegetable Chips Crunchies | Taro, Golden Sweet Potato, Purple Sweet
+                Potato Chips | Gluten Free | Vegan Friendly Snack | Low Fat | 50% Less Oil | No Preservatives - Pack of
+                3( 265 gm )</p>
+            <a href="https://www.amazon.in/TBH-Vegetable-Crunchies-Gluten-Free-Variants/dp/B084NXHH5Q/ref=sr_1_3_sspa?adgrpid=1322714094967097&dib=eyJ2IjoiMSJ9.XNrAT_E7lkzunPelfeTamJSNN5YczwwtYpKvnjwbMBdvWgqr5HdM9WKrLCISWhux57Y01-AZkrpWkkpNf_pLa6jmfvZ24708WgJ8aYbITb7vQRvMHKI4V7OloebCIT0LBUe3rN7hkFzZrUBluvj5DIM6P-idK0FGuiJBkSH4XNMMXcJ4W9yoLTtnlseg07xCcmbVmnvYODrND1xqdvV-ov_kBAWq8J2raTlEvvaKmAY.S9AOZRPc_UcTuFGmebogufx2dlTTpRKCSmLk18kpBXU&dib_tag=se&hvadid=82669890084963&hvbmt=bb&hvdev=c&hvlocphy=143931&hvnetw=o&hvqmt=b&hvtargid=kwd-82670511572571%3Aloc-90&hydadcr=28764_1954858&keywords=terra+vegetable+chips&qid=1712225427&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank">
+                <button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Monsoon-Harvest-Nuts-Seeds-Energy/dp/B082KRB7T6/ref=sr_1_5?dib=eyJ2IjoiMSJ9.QnUKqNRiYQzFPXM1QRMI62TTTr9fqiV3px8YOrkKg-M2A-w5KHWCQ64-l7m5CwFk1y3If1wz9VVCxENft9_jEJNzt8Ki3rDrVDnYx5E6m5LIBRvZWXI_AkLQiokFuIx8Yi5FeJj4YPzl8qVasGoZvIrjY1Lp2EwMEw9B9NkF4RTV8h3jIz05LxunQpr2HM0llmk_UZkviDR5jCcupRqzxLfhl_uIKqTnVQ6s1yxnpYXP4nEpUUzn86V-_8dU1qIDC012yzj9CMkI4QX0DRHehuGWRixI7gX_avl9tb5r1ro.YTBjV0tj4V-KmYnuksSt7w2dRXZ8FRTX1HAS9ajU0t8&dib_tag=se&keywords=nut+and+seed+bars&qid=1711996034&sr=8-5
+            " target="_blank"><img src="i5.jpg" alt="Item 5"></a>
+            <p class="desci">Wingreens Harvest Nuts & Seeds Energy Bars - Dark Chocolate & Sea Salt - 180 g (Pack of 6 x
+                30g), Almonds, cashews, pumpkin seeds & Dry Fruit, Healthy Protein Snack Bars, All Natural, Plant Based
+            </p>
+            <a href="https://www.amazon.in/Monsoon-Harvest-Nuts-Seeds-Energy/dp/B082KRB7T6/ref=sr_1_5?dib=eyJ2IjoiMSJ9.QnUKqNRiYQzFPXM1QRMI62TTTr9fqiV3px8YOrkKg-M2A-w5KHWCQ64-l7m5CwFk1y3If1wz9VVCxENft9_jEJNzt8Ki3rDrVDnYx5E6m5LIBRvZWXI_AkLQiokFuIx8Yi5FeJj4YPzl8qVasGoZvIrjY1Lp2EwMEw9B9NkF4RTV8h3jIz05LxunQpr2HM0llmk_UZkviDR5jCcupRqzxLfhl_uIKqTnVQ6s1yxnpYXP4nEpUUzn86V-_8dU1qIDC012yzj9CMkI4QX0DRHehuGWRixI7gX_avl9tb5r1ro.YTBjV0tj4V-KmYnuksSt7w2dRXZ8FRTX1HAS9ajU0t8&dib_tag=se&keywords=nut+and+seed+bars&qid=1711996034&sr=8-5"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0B6RP8VJW/ref=sspa_dk_detail_0?pd_rd_i=B0B6RP8VJW&pd_rd_w=FFkQX&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=TPKTF758DV3NNS1D92RZ&pd_rd_wg=PHxma&pd_rd_r=035c5c14-77fd-49b9-9967-6847ae4d2c38&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1"
+                target="_blank"><img src="i6.jpg" alt="Item 6"></a>
+            <p class="desci">EAT BETTER CO - Assorted Laddoo Box - 35 laddoos in 5 Different Flavors | Dry - Fruit
+                Laddoos | Sugar-Free | Naturally Sweet | Energy Bar Replacement | High Protein and Instant Energy -
+                Healthy Snacks - Healthy Sweet</p>
+            <a href="https://www.amazon.in/dp/B0B6RP8VJW/ref=sspa_dk_detail_0?pd_rd_i=B0B6RP8VJW&pd_rd_w=FFkQX&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=TPKTF758DV3NNS1D92RZ&pd_rd_wg=PHxma&pd_rd_r=035c5c14-77fd-49b9-9967-6847ae4d2c38&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+
+        <div class="item">
+            <a href="https://www.amazon.in/Eat-Better-Co-Chatapata-Crispies/dp/B0CPT1LQ41/ref=pd_bxgy_d_sccl_1/262-4914410-7820550?pd_rd_w=Iml8D&content-id=amzn1.sym.0d567d72-6457-4276-a907-9d858c3c468a&pf_rd_p=0d567d72-6457-4276-a907-9d858c3c468a&pf_rd_r=GGS1R5YB9WWXEVNXJ0MX&pd_rd_wg=EsQrj&pd_rd_r=eaa9f92f-c8aa-4d57-84d2-5250b3ede08b&pd_rd_i=B0CPT1LQ41&psc=1"
+                target="_blank"><img src="i7.jpg" alt="Item 7"></a>
+            <p class="desci">Eat Better Co - Crispy Millet Mixture - Chatapata Healthy Namkeen - Ragi, Jowar, Rice
+                Crispies roasted with Peanuts & Channa (Chilli Garlic & Mast Masala Combo Pack, Pack of Two - 200 grams)
+            </p>
+            <a href="https://www.amazon.in/Eat-Better-Co-Chatapata-Crispies/dp/B0CPT1LQ41/ref=pd_bxgy_d_sccl_1/262-4914410-7820550?pd_rd_w=Iml8D&content-id=amzn1.sym.0d567d72-6457-4276-a907-9d858c3c468a&pf_rd_p=0d567d72-6457-4276-a907-9d858c3c468a&pf_rd_r=GGS1R5YB9WWXEVNXJ0MX&pd_rd_wg=EsQrj&pd_rd_r=eaa9f92f-c8aa-4d57-84d2-5250b3ede08b&pd_rd_i=B0CPT1LQ41&psc=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button>
+        </div></a>
+
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B08CL4LG9X/ref=sspa_dk_detail_3?psc=1&pd_rd_i=B08CL4LG9X&pd_rd_w=FFkQX&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=TPKTF758DV3NNS1D92RZ&pd_rd_wg=PHxma&pd_rd_r=035c5c14-77fd-49b9-9967-6847ae4d2c38&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
+                target="_blank"><img src="i8.jpg" alt="Item 8"></a>
+            <p class="desci">
+                Nutty Gritties Mom's Superfood Healthy Trail Mix 200g - Roasted Almonds | Mixed Roasted Seeds Flax,
+                Pumpkin, Sunflower | Dried Black Currant...</p>
+            <a href="https://www.amazon.in/dp/B08CL4LG9X/ref=sspa_dk_detail_3?psc=1&pd_rd_i=B08CL4LG9X&pd_rd_w=FFkQX&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=TPKTF758DV3NNS1D92RZ&pd_rd_wg=PHxma&pd_rd_r=035c5c14-77fd-49b9-9967-6847ae4d2c38&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0B4DPJ9C3/ref=sspa_dk_detail_0?psc=1&pd_rd_i=B0B4DPJ9C3&pd_rd_w=ApuEQ&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=0X9C5RK1F3J1H8B70A01&pd_rd_wg=I9zv8&pd_rd_r=6db91bac-3c9c-4cdf-9d61-753d61cded83&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
+                target="_blank"><img src="i9.jpg" alt="Item 9"></a>
+            <p class="desci">
+                Nutty Gritties Antioxidant Trail Mix 200g | 21 Superfoods in 1 Mix | Including Almonds, Hazelnuts,
+                Brazil Nuts, Berries,Chia Seeds, Pumpkin Seeds &...</p>
+            <a href="https://www.amazon.in/dp/B0B4DPJ9C3/ref=sspa_dk_detail_0?psc=1&pd_rd_i=B0B4DPJ9C3&pd_rd_w=ApuEQ&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=0X9C5RK1F3J1H8B70A01&pd_rd_wg=I9zv8&pd_rd_r=6db91bac-3c9c-4cdf-9d61-753d61cded83&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Cranberry-Cashew-Gluten-free-Preservatives-Post-Workout/dp/B0BG2H2599/ref=sr_1_1_sspa?crid=1A124BBSMXAGN&dib=eyJ2IjoiMSJ9.drTH-r_micks4n0PM6tNg_c7f_mtBtEOD6TOS0aTjylW4H0xFzd5iU8Aq3AP1wRjlbWeemPR8BzO8GMlDbeRWxyCCrdDJ73Fo6yKY2bZLMydd8mw6dQQKL-na3NmDjY4ICA1zJmLmqOiz1ElHmi-7Ll23wqyerkGQ1TjoAunrYogapcMVQ3wpavJlFHlomm5HnzM5bCEVdZgLUBzanIVxHWy3JtXIG57VC9bOdotNjBnv78WKjL0pwVyVKkZ67nm.1GNu-A4GiTT7Fo_i3tcuLoT2qwc1N_eB-3XN18fbUPY&dib_tag=se&keywords=nut+bars+without+milk&qid=1712037387&s=grocery&sprefix=nut+bars+with+out+mil%2Cgrocery%2C229&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank"><img src="i10.jpg" alt="Item 10"></a>
+            <p class="desci">Wild Date 40gram Snack Bar | Cranberry, Cashew & Almond | Gluten-free with No Added
+                Preservatives | Ideal Post-Workout Snack | Pack of 6</p>
+            <a href="https://www.amazon.in/Cranberry-Cashew-Gluten-free-Preservatives-Post-Workout/dp/B0BG2H2599/ref=sr_1_1_sspa?crid=1A124BBSMXAGN&dib=eyJ2IjoiMSJ9.drTH-r_micks4n0PM6tNg_c7f_mtBtEOD6TOS0aTjylW4H0xFzd5iU8Aq3AP1wRjlbWeemPR8BzO8GMlDbeRWxyCCrdDJ73Fo6yKY2bZLMydd8mw6dQQKL-na3NmDjY4ICA1zJmLmqOiz1ElHmi-7Ll23wqyerkGQ1TjoAunrYogapcMVQ3wpavJlFHlomm5HnzM5bCEVdZgLUBzanIVxHWy3JtXIG57VC9bOdotNjBnv78WKjL0pwVyVKkZ67nm.1GNu-A4GiTT7Fo_i3tcuLoT2qwc1N_eB-3XN18fbUPY&dib_tag=se&keywords=nut+bars+without+milk&qid=1712037387&s=grocery&sprefix=nut+bars+with+out+mil%2Cgrocery%2C229&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank">
+                <button class="btn btn-success">Buy Now</button> </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B08RDRFJ6X/ref=sspa_dk_detail_3?psc=1&pd_rd_i=B08RDRFJ6X&pd_rd_w=maYBi&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=X6CN62YSF7PJ016EJP0F&pd_rd_wg=VD217&pd_rd_r=85dde00b-a82f-4bb9-9d61-0282a39c796e&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
+                target="_blank"><img src="i11.jpg" alt="Item 11"></a>
+            <p class="desci">DThe Whole Truth - Energy Bars | Nuts For You (4 Peanut Choco Fudge, 2 Almond Choco Fudge)
+                | Pack of 6 x 40g | Dairy Free & Sugarfree | Vegan | No Preservatives | All Natural | Healthy Snack</p>
+            <a href="https://www.amazon.in/dp/B08RDRFJ6X/ref=sspa_dk_detail_3?psc=1&pd_rd_i=B08RDRFJ6X&pd_rd_w=maYBi&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=X6CN62YSF7PJ016EJP0F&pd_rd_wg=VD217&pd_rd_r=85dde00b-a82f-4bb9-9d61-0282a39c796e&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
+                target="_blank">
+                <button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Healthy-Binge-Amaranth-Crispies-Cholesterol/dp/B09LMHYNK2/ref=sr_1_1_sspa?crid=2T4DU0PMBDJBC&dib=eyJ2IjoiMSJ9.H8m9ySs-zzT41h4gg9di8RJMicod9Hto2b4_rDsZXVHGHUhdUwYdKF-MRBh8G9ttimAJl_sIGMyKXtZktqNthQODnpS2CUJXPQubZY7hklOvd9wudRrJE6-uggzz-QpEcBuC_z4lPCRQzpUyp62MQoKGcXEBFGxU4zyCcT2Fm8x8Z-YYTYN6VurwrmgrZLZTdDGGyULUBDiWDK5VmSNBr8iq1My8GQchWmOcChVGKZzlO-XcPgssiFvr0CHjt6d6vbBsGRlqujvaSwDVig6bKUPivQoUms6bfdNKx3fbxsQ.Kk75t0vhShmICHAAJibp4MidZS6meWKiPzJbgcdTf6c&dib_tag=se&keywords=dairy%2Bfree%2Bchips&qid=1712037631&s=grocery&sprefix=dairy%2Bfree%2Bchip%2Cgrocery%2C221&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+                target="_blank"><img src="i12.jpg" alt="Item 12"></a>
+            <p class="desci">The Healthy Binge Assorted Baked Chips Healthy snacks for kids and adults| Ragi, Jowar,
+                Moringa, Amaranth & Quinoa Chips | Indian Masala, Cajun Spice, Cheese, BBQ, Chatpata Chaat, Sour Cream
+                Wasabi |Protein and Fiber Rich | Gluten Free| Pack of 24 (40 Gm X 24)
+            </p>
+            <a href="https://www.amazon.in/Healthy-Binge-Amaranth-Crispies-Cholesterol/dp/B09LMHYNK2/ref=sr_1_1_sspa?crid=2T4DU0PMBDJBC&dib=eyJ2IjoiMSJ9.H8m9ySs-zzT41h4gg9di8RJMicod9Hto2b4_rDsZXVHGHUhdUwYdKF-MRBh8G9ttimAJl_sIGMyKXtZktqNthQODnpS2CUJXPQubZY7hklOvd9wudRrJE6-uggzz-QpEcBuC_z4lPCRQzpUyp62MQoKGcXEBFGxU4zyCcT2Fm8x8Z-YYTYN6VurwrmgrZLZTdDGGyULUBDiWDK5VmSNBr8iq1My8GQchWmOcChVGKZzlO-XcPgssiFvr0CHjt6d6vbBsGRlqujvaSwDVig6bKUPivQoUms6bfdNKx3fbxsQ.Kk75t0vhShmICHAAJibp4MidZS6meWKiPzJbgcdTf6c&dib_tag=se&keywords=dairy%2Bfree%2Bchips&qid=1712037631&s=grocery&sprefix=dairy%2Bfree%2Bchip%2Cgrocery%2C221&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/gp/aw/d/B0C6GY7BWH/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07b005f0413e3c93bd7947c05eed3991&hsa_cr_id=0&sr=1-1-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_0_img&pd_rd_w=PIicT&content-id=amzn1.sym.8b13584a-c7fa-402c-b0a3-ddf39b989f1f&pf_rd_p=8b13584a-c7fa-402c-b0a3-ddf39b989f1f&pf_rd_r=JVMQ0GRRZ6FW39ZTB4WX&pd_rd_wg=LiTLv&pd_rd_r=dc1e1938-bae3-495b-8596-1c5fc9993d49&th=1"
+                target="_blank"><img src="i13.jpg" alt="Item 13"></a>
+            <p class="desci">DiabeSmart Baked Bhujia Sev 200g| Diabetic Snacks for Sugar Control| Roasted Healthy
+                Snacks| Low Calorie Diet Food for weight management| Aloo Bhujia| Gluten sfree Snacks| Sugar Free
+                Namkeen Bhujiya</p>
+            <a href="https://www.amazon.in/gp/aw/d/B0C6GY7BWH/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=07b005f0413e3c93bd7947c05eed3991&hsa_cr_id=0&sr=1-1-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_0_img&pd_rd_w=PIicT&content-id=amzn1.sym.8b13584a-c7fa-402c-b0a3-ddf39b989f1f&pf_rd_p=8b13584a-c7fa-402c-b0a3-ddf39b989f1f&pf_rd_r=JVMQ0GRRZ6FW39ZTB4WX&pd_rd_wg=LiTLv&pd_rd_r=dc1e1938-bae3-495b-8596-1c5fc9993d49&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B09QGTVT5B/ref=sspa_dk_detail_2?psc=1&pd_rd_i=B09QGTVT5B&pd_rd_w=Vj8tk&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=HQ675CMQ5QF7W2V7HYVG&pd_rd_wg=1vgVz&pd_rd_r=1475bdf2-8e8a-479b-8e44-79183c797b5c&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
+                target="_blank"><img src="i14.jpg" alt="Item 14"></a>
+            <p class="desci">Paper Boat Absolute Health Dry Fruits Mix, Premium Trail Mix | Healthy Mixed Nuts with Dry
+                Fruits | Almonds | Cashews | Cranberry | Pumpkin Seeds | Candied Amla, Reusable Jar (1000g)</p>
+            <a href="https://www.amazon.in/dp/B09QGTVT5B/ref=sspa_dk_detail_2?psc=1&pd_rd_i=B09QGTVT5B&pd_rd_w=Vj8tk&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=HQ675CMQ5QF7W2V7HYVG&pd_rd_wg=1vgVz&pd_rd_r=1475bdf2-8e8a-479b-8e44-79183c797b5c&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/We-Care-Eco-Products-Jackfruit/dp/B08XJTZF17/ref=sr_1_10?adgrpid=1317216540623236&dib=eyJ2IjoiMSJ9.6bwYS-xalJTVR3noHFVqNg48wXsXMfrgPfJOHp79b-vSD0TbkGCF-5QS_4AU8Tctmrer4Yub-3VIks1-ao1vVoVUxG992MlfNhcrr6a0uyWlqk181f35FnG_CwgtDIuhKYQNSgU9lkPdcVA_wHcrVlFQh4xJWYXAD-pEnOCiy2_tsxXfRPbiGRBy4S40c-gc3h2oGwL6-O-QjegLfZ3xbvDqmre6w9vWVNc7LZH7lFqFdC1BYw65yccNSAQQbAtCHS9dJrD9ashVgwBZuWLx3b13Q3Uf1nfy0NdYVHjd8bY.zPGzYBgRRb8uStJ8C_RLL8_KBPxpNTHvN_Jh0i7r1tI&dib_tag=se&hvadid=82326291760096&hvbmt=bb&hvdev=c&hvlocphy=143931&hvnetw=o&hvqmt=b&hvtargid=kwd-82326969550002%3Aloc-90&hydadcr=601_2444561&keywords=good+graze+coconut+chips&qid=1712228709&sr=8-10"
+                target="_blank"><img src="i15.jpg" alt="Item 15"></a>
+            <p class="desci">We Care Eco Products | Banana Chips and Jackfruit Chips Combo Pack | Kerala Special
+                Homemade Chips |Coconut Oil (225g Each (Total 450g))</p>
+            <a href="https://www.amazon.in/We-Care-Eco-Products-Jackfruit/dp/B08XJTZF17/ref=sr_1_10?adgrpid=1317216540623236&dib=eyJ2IjoiMSJ9.6bwYS-xalJTVR3noHFVqNg48wXsXMfrgPfJOHp79b-vSD0TbkGCF-5QS_4AU8Tctmrer4Yub-3VIks1-ao1vVoVUxG992MlfNhcrr6a0uyWlqk181f35FnG_CwgtDIuhKYQNSgU9lkPdcVA_wHcrVlFQh4xJWYXAD-pEnOCiy2_tsxXfRPbiGRBy4S40c-gc3h2oGwL6-O-QjegLfZ3xbvDqmre6w9vWVNc7LZH7lFqFdC1BYw65yccNSAQQbAtCHS9dJrD9ashVgwBZuWLx3b13Q3Uf1nfy0NdYVHjd8bY.zPGzYBgRRb8uStJ8C_RLL8_KBPxpNTHvN_Jh0i7r1tI&dib_tag=se&hvadid=82326291760096&hvbmt=bb&hvdev=c&hvlocphy=143931&hvnetw=o&hvqmt=b&hvtargid=kwd-82326969550002%3Aloc-90&hydadcr=601_2444561&keywords=good+graze+coconut+chips&qid=1712228709&sr=8-10"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B094NX1HT7/ref=sspa_dk_detail_6?psc=1&pd_rd_i=B094NX1HT7&pd_rd_w=FeTjl&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=X79QS7B1FMJ64R2E551D&pd_rd_wg=EYxq4&pd_rd_r=15a06979-f373-41df-97f4-2063b5184f5d&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
+                target="_blank"><img src="i16.jpg" alt="Item 16"></a>
+            <p class="desci">SHREGO Radhe Roasted Chana, Bhuna Chana (Desi Chickpeas) 360G </p>
+            <a href="https://www.amazon.in/dp/B094NX1HT7/ref=sspa_dk_detail_6?psc=1&pd_rd_i=B094NX1HT7&pd_rd_w=FeTjl&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=X79QS7B1FMJ64R2E551D&pd_rd_wg=EYxq4&pd_rd_r=15a06979-f373-41df-97f4-2063b5184f5d&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0BGLQW3DZ/ref=sspa_dk_detail_2?pd_rd_i=B0BGLQW3DZ&pd_rd_w=dPWbO&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=ZZ8M0HRX320Z5RTENY6D&pd_rd_wg=jMaUk&pd_rd_r=0d7c1a81-5c62-487f-9fd9-b2e183c26c6a&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1"
+                target="_blank"><img src="i17.webp" alt="Item 17"></a>
+            <p class="desci">Sugar Watchers Low GI Millet Pasta, No Maida, Macaroni, Diabetic Friendly (Pack of 2)</p>
+            <a href="https://www.amazon.in/dp/B0BGLQW3DZ/ref=sspa_dk_detail_2?pd_rd_i=B0BGLQW3DZ&pd_rd_w=dPWbO&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=ZZ8M0HRX320Z5RTENY6D&pd_rd_wg=jMaUk&pd_rd_r=0d7c1a81-5c62-487f-9fd9-b2e183c26c6a&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Instant-China-Strawberry-Children-Adults/dp/B09SWVQVG1/ref=sr_1_7?crid=1XP4RHDO4B7FI&dib=eyJ2IjoiMSJ9.Uw1XJSXbQIuQ2v1xy9PM0OwERDwCuy14ouCivCY2EziJL54PkmUaWWhyIJ3F8H9yzcxo7ccD4OXgzynqr4gfjQwD_GPpYNTrIHSY6zykPYcTY6jIVdl-LW4QlVUzWBWwfBQ8qKrcNs5haYETeQVp0e98pc4W9g0wV6DKE-FhvPAMMTIh91sgGL1q9tIR254fV_pEAd2Ok0EUZE1nSENOw6vJUxue-eaylyBs-dCGL4d64W-9CVHCCI1miry3aYO4.yLYwQ_4UBxN49VOQFrDXpElR7qVrFWpKuBSwgc56kaw&dib_tag=se&keywords=ready%2Bto%2Beat%2Bfoods%2Bdairy%2Bfree&qid=1712039105&s=grocery&sprefix=ready%2Bto%2Beat%2Bfoods%2Bdairy%2Bfre%2Cgrocery%2C235&sr=1-7&th=1"
+                target="_blank"><img src="i18.jpg" alt="Item 18"></a>
+            <p class="desci">Five Star Instant China Grass Mix Strawberry 100g Box for Children and Adults | Easy to
+                Make | Ready to Eat - Pack of 7</p>
+            <a href="https://www.amazon.in/Instant-China-Strawberry-Children-Adults/dp/B09SWVQVG1/ref=sr_1_7?crid=1XP4RHDO4B7FI&dib=eyJ2IjoiMSJ9.Uw1XJSXbQIuQ2v1xy9PM0OwERDwCuy14ouCivCY2EziJL54PkmUaWWhyIJ3F8H9yzcxo7ccD4OXgzynqr4gfjQwD_GPpYNTrIHSY6zykPYcTY6jIVdl-LW4QlVUzWBWwfBQ8qKrcNs5haYETeQVp0e98pc4W9g0wV6DKE-FhvPAMMTIh91sgGL1q9tIR254fV_pEAd2Ok0EUZE1nSENOw6vJUxue-eaylyBs-dCGL4d64W-9CVHCCI1miry3aYO4.yLYwQ_4UBxN49VOQFrDXpElR7qVrFWpKuBSwgc56kaw&dib_tag=se&keywords=ready%2Bto%2Beat%2Bfoods%2Bdairy%2Bfree&qid=1712039105&s=grocery&sprefix=ready%2Bto%2Beat%2Bfoods%2Bdairy%2Bfre%2Cgrocery%2C235&sr=1-7&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0896JSBLK/ref=sspa_dk_detail_3?pd_rd_i=B0896JSBLK&pd_rd_w=feLJ7&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=11A2T6WCVZ3H7C1GDEM9&pd_rd_wg=gYre2&pd_rd_r=2ecf6a2b-c6a9-4ff3-b885-b8454f15b8b8&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1"
+                target="_blank"><img src="i19.jpg" alt="Item 19"></a>
+            <p class="desci">Kari Kari Chilli Garlic Rice Cracker & Peanut Mix | Crunchy Japanese Snacks | Roasted,
+                Non-Fried | Healthy Snacks | 100% Vegetarian | Party Snacks (18g x Pack of 6)</p>
+            <a href="https://www.amazon.in/dp/B0896JSBLK/ref=sspa_dk_detail_3?pd_rd_i=B0896JSBLK&pd_rd_w=feLJ7&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=11A2T6WCVZ3H7C1GDEM9&pd_rd_wg=gYre2&pd_rd_r=2ecf6a2b-c6a9-4ff3-b885-b8454f15b8b8&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.com/Louisville-Vegan-Jerky-Gluten-Free-Ingredients/dp/B01N8SLC7N"
+                target="_blank"><img src="i20.jpg" alt="Item 20"></a>
+            <p class="desci">Louisville Vegan Jerky - Variety Pack, Vegan Jerky, 15-21 Grams of Protein, Gluten-Free
+                Ingredients, Includes Black Pepper, Perfect Pepperoni, Maple Bacon, Carolina BBQ, & Buffalo Dill (3 oz,
+                5-Pack)</p>
+            <a href="https://www.amazon.com/Louisville-Vegan-Jerky-Gluten-Free-Ingredients/dp/B01N8SLC7N"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/TBH-Vegetable-Chickpea-Nutrient-Gluten-Free/dp/B08M9Z1SCJ/ref=sr_1_4_sspa?adgrpid=1322714094967097&dib=eyJ2IjoiMSJ9.XNrAT_E7lkzunPelfeTamJSNN5YczwwtYpKvnjwbMBdvWgqr5HdM9WKrLCISWhux57Y01-AZkrpWkkpNf_pLa6jmfvZ24708WgJ8aYbITb7vQRvMHKI4V7OloebCIT0LBUe3rN7hkFzZrUBluvj5DIM6P-idK0FGuiJBkSH4XNMMXcJ4W9yoLTtnlseg07xCcmbVmnvYODrND1xqdvV-ov_kBAWq8J2raTlEvvaKmAY.S9AOZRPc_UcTuFGmebogufx2dlTTpRKCSmLk18kpBXU&dib_tag=se&hvadid=82669890084963&hvbmt=bb&hvdev=c&hvlocphy=143931&hvnetw=o&hvqmt=b&hvtargid=kwd-82670511572571%3Aloc-90&hydadcr=28764_1954858&keywords=terra+vegetable+chips&qid=1712225427&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank"><img src="i21.jpg" alt="Item 21"></a>
+            <p class="desci">TBH - To Be Honest Vegetable Chips | Tangy Chickpea with Chilli & Lime |Tasty with High
+                Dietary Fiber and Nutrient Content |Gluten-Free Snack - Pack of 3 (110 gm X 3)</p>
+            <a href="https://www.amazon.in/TBH-Vegetable-Chickpea-Nutrient-Gluten-Free/dp/B08M9Z1SCJ/ref=sr_1_4_sspa?adgrpid=1322714094967097&dib=eyJ2IjoiMSJ9.XNrAT_E7lkzunPelfeTamJSNN5YczwwtYpKvnjwbMBdvWgqr5HdM9WKrLCISWhux57Y01-AZkrpWkkpNf_pLa6jmfvZ24708WgJ8aYbITb7vQRvMHKI4V7OloebCIT0LBUe3rN7hkFzZrUBluvj5DIM6P-idK0FGuiJBkSH4XNMMXcJ4W9yoLTtnlseg07xCcmbVmnvYODrND1xqdvV-ov_kBAWq8J2raTlEvvaKmAY.S9AOZRPc_UcTuFGmebogufx2dlTTpRKCSmLk18kpBXU&dib_tag=se&hvadid=82669890084963&hvbmt=bb&hvdev=c&hvlocphy=143931&hvnetw=o&hvqmt=b&hvtargid=kwd-82670511572571%3Aloc-90&hydadcr=28764_1954858&keywords=terra+vegetable+chips&qid=1712225427&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B07QR5PHZT?pd_rd_i=B07QR5PHZT&pf_rd_p=aa14fa00-bc47-4b9c-afe8-e5f5a8aecc2e&pf_rd_r=C6P40QMCBTVZ15Q94GCS&pd_rd_wg=lKs2C&pd_rd_w=Asvmn&pd_rd_r=590cf5d7-f7ba-4d14-999f-64a6550fb0ba"
+                target="_blank"><img src="i22.jpg" alt="Item 22"></a>
+            <p class="desci">New Tree Healthy Snack Combo || Quinoa Chips Jalapeno 225gm || Quinoa Chips Peri Peri 225gm
+                || Combo of Pack 2 || Combined Weight: 450gm || Gluten Free Snacks</p>
+            <a href="https://www.amazon.in/dp/B07QR5PHZT?pd_rd_i=B07QR5PHZT&pf_rd_p=aa14fa00-bc47-4b9c-afe8-e5f5a8aecc2e&pf_rd_r=C6P40QMCBTVZ15Q94GCS&pd_rd_wg=lKs2C&pd_rd_w=Asvmn&pd_rd_r=590cf5d7-f7ba-4d14-999f-64a6550fb0ba"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/gp/aw/d/B0BBML18YH/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=9eee62ba2437cdf5386ea2255da9bb57&hsa_cr_id=0&sr=1-3-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_2_title&pd_rd_w=ywUwS&content-id=amzn1.sym.8b13584a-c7fa-402c-b0a3-ddf39b989f1f&pf_rd_p=8b13584a-c7fa-402c-b0a3-ddf39b989f1f&pf_rd_r=C0B237E2A9BWR1GFMSW3&pd_rd_wg=DvvIL&pd_rd_r=1004a653-8309-4078-abd6-02ca9c3f0867&th=1"
+                target="_blank"><img src="i23.jpg" alt="Item 23"></a>
+            <p class="desci">Natch Chickpea Popped Chips, Never Fried, Low Calorie, 100% All Natural, No Artificial
+                Flavours, Vegan, Gluten Free, Rich in Fiber and Protein, Barbecue Flavour, 55gm each (Pack of 3)</p>
+            <a href="https://www.amazon.in/gp/aw/d/B0BBML18YH/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=9eee62ba2437cdf5386ea2255da9bb57&hsa_cr_id=0&sr=1-3-undefined&ref_=sbx_be_dp_arbies_lsi4d_asin_2_title&pd_rd_w=ywUwS&content-id=amzn1.sym.8b13584a-c7fa-402c-b0a3-ddf39b989f1f&pf_rd_p=8b13584a-c7fa-402c-b0a3-ddf39b989f1f&pf_rd_r=C0B237E2A9BWR1GFMSW3&pd_rd_wg=DvvIL&pd_rd_r=1004a653-8309-4078-abd6-02ca9c3f0867&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Sticky-Gluten-Family-Natural-Crunchy/dp/B0BBFPBDJ6/ref=pd_bxgy_img_d_sccl_1/262-4914410-7820550?pd_rd_w=zFCct&content-id=amzn1.sym.f406cf11-1229-4650-9e74-6c521f43ef93&pf_rd_p=f406cf11-1229-4650-9e74-6c521f43ef93&pf_rd_r=Y7BH70KEB2Y5ZHAPXR8D&pd_rd_wg=rru2l&pd_rd_r=e4a542f3-61da-448a-ba78-526043970121&pd_rd_i=B0BBFPBDJ6&psc=1"
+                target="_blank"><img src="i24.jpg" alt="Item 24"></a>
+            <p class="desci">Natch Thai Sticky Rice Chips, 100% All Natural, Vegan, Gluten Free, No Artificial
+                Preservatives, Trans Fat Free, Low Calorie, Sweet Chilli Flavour, 100g each (Pack of 1)</p>
+            <a href="https://www.amazon.in/Sticky-Gluten-Family-Natural-Crunchy/dp/B0BBFPBDJ6/ref=pd_bxgy_img_d_sccl_1/262-4914410-7820550?pd_rd_w=zFCct&content-id=amzn1.sym.f406cf11-1229-4650-9e74-6c521f43ef93&pf_rd_p=f406cf11-1229-4650-9e74-6c521f43ef93&pf_rd_r=Y7BH70KEB2Y5ZHAPXR8D&pd_rd_wg=rru2l&pd_rd_r=e4a542f3-61da-448a-ba78-526043970121&pd_rd_i=B0BBFPBDJ6&psc=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0CY5N9JSV/ref=sspa_dk_detail_1?psc=1&pd_rd_i=B0CY5N9JSV&pd_rd_w=6ys3v&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=XXK7JK2WHB5ZWETPRBP7&pd_rd_wg=mWijh&pd_rd_r=92f185d5-cd67-459a-ae1d-c8313be67eb3&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
+                target="_blank"><img src="i25.jpg" alt="Item 25"></a>
+            <p class="desci">Eat Better Co – Millet Namkeen – Mango Achari - Chatpata Healthy Namkeen Snack - Ragi,
+                Jowar, Rice Crispies roasted with Peanuts – Healthy Snacks Combo – Pack of Two – 200 grams total</p>
+            <a href="https://www.amazon.in/dp/B0CY5N9JSV/ref=sspa_dk_detail_1?psc=1&pd_rd_i=B0CY5N9JSV&pd_rd_w=6ys3v&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=XXK7JK2WHB5ZWETPRBP7&pd_rd_wg=mWijh&pd_rd_r=92f185d5-cd67-459a-ae1d-c8313be67eb3&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B07SJT8TJ9/ref=sspa_dk_detail_9?pd_rd_i=B07SJT8TJ9&pd_rd_w=OVS6t&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=3MV6PAEPRFMB19NQBTP5&pd_rd_wg=Bn3uu&pd_rd_r=5bc7e1d4-b4b0-4444-b210-2629555d0d22&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1"
+                target="_blank"><img src="i26.jpg" alt="Item 26"></a>
+            <p class="desci">Omay Foods Khatta Meetha Mixture, 120g Jar (Pack of 4) | Healthy Snacks | Roasted Snacks I
+                100% Oil-Free | Healthy Indian Namkeen I Late Night Snack I Office Snack I Evening Snack I Diet Snack I
+                Snack for Weight loss I Travel Snack I Roasted Namkeen I Indian Namkeen</p>
+            <a href="https://www.amazon.in/dp/B07SJT8TJ9/ref=sspa_dk_detail_9?pd_rd_i=B07SJT8TJ9&pd_rd_w=OVS6t&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=3MV6PAEPRFMB19NQBTP5&pd_rd_wg=Bn3uu&pd_rd_r=5bc7e1d4-b4b0-4444-b210-2629555d0d22&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B08DDHW8X2/ref=sspa_dk_detail_3?pf_rd_p=2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pf_rd_r=CCBTAHVDRVA9PTM0TCP1&pd_rd_wg=pSOEE&pd_rd_w=vPbxe&content-id=amzn1.sym.2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pd_rd_r=656ed9d2-b147-41f1-a9c2-33470334f3ed&s=grocery&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1"
+                target="_blank"><img src="i27.jpg" alt="Item 27"></a>
+            <p class="desci">N Nakodas Roasted Makhana Combo - Peri Peri, Classic Salted Fox Nuts (70gm Each, Pack of 2)
+            </p>
+            <a href="https://www.amazon.in/dp/B08DDHW8X2/ref=sspa_dk_detail_3?pf_rd_p=2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pf_rd_r=CCBTAHVDRVA9PTM0TCP1&pd_rd_wg=pSOEE&pd_rd_w=vPbxe&content-id=amzn1.sym.2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pd_rd_r=656ed9d2-b147-41f1-a9c2-33470334f3ed&s=grocery&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+
+
+        <div class="item">
+            <a href="https://www.amazon.in/NativEssence-Roasted-Children-Delicious-Mindblowing/dp/B0B3FZV46W/ref=bmx_dp_3k0pgwqn_d_sccl_3_5/262-4914410-7820550?pd_rd_w=x0hmq&content-id=amzn1.sym.9545ee5f-009a-494e-984b-d44c7273a774&pf_rd_p=9545ee5f-009a-494e-984b-d44c7273a774&pf_rd_r=5KCK0S3TVE47KD5G4NVS&pd_rd_wg=rQIXy&pd_rd_r=eb88fef9-e366-4488-9e3f-7745171491f9&pd_rd_i=B0B3FZV46W&psc=1"
+                target="_blank"><img src="i28.jpg" alt="Item 28"></a>
+            <p class="desci">NativEssence Roasted Ragi Chips - Healthy Snack - 100gm Each - Pack of 3 (Jeera, Mint,
+                Indiantadka)</p>
+            <a href="https://www.amazon.in/NativEssence-Roasted-Children-Delicious-Mindblowing/dp/B0B3FZV46W/ref=bmx_dp_3k0pgwqn_d_sccl_3_5/262-4914410-7820550?pd_rd_w=x0hmq&content-id=amzn1.sym.9545ee5f-009a-494e-984b-d44c7273a774&pf_rd_p=9545ee5f-009a-494e-984b-d44c7273a774&pf_rd_r=5KCK0S3TVE47KD5G4NVS&pd_rd_wg=rQIXy&pd_rd_r=eb88fef9-e366-4488-9e3f-7745171491f9&pd_rd_i=B0B3FZV46W&psc=1"
+                target="_blank">
+                <button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+
+        <div class="item">
+            <a href="https://www.amazon.in/EAT-BETTER-CO-Delicious-Replacement/dp/B0B6RNXHMP/ref=bmx_dp_3k0pgwqn_d_sccl_3_3/262-4914410-7820550?pd_rd_w=x0hmq&content-id=amzn1.sym.9545ee5f-009a-494e-984b-d44c7273a774&pf_rd_p=9545ee5f-009a-494e-984b-d44c7273a774&pf_rd_r=5KCK0S3TVE47KD5G4NVS&pd_rd_wg=rQIXy&pd_rd_r=eb88fef9-e366-4488-9e3f-7745171491f9&pd_rd_i=B0B6RNXHMP&psc=1"
+                target="_blank"><img src="i29.jpg" alt="Item 29"></a>
+            <p class="desci">EAT BETTER CO - Coffee & Almond Sugar-Free Laddoos | Energy-Bar Replacement | 95%
+                Dry-Fruits | High Protein & Instant Energy - Super Saver Pack of 20 - Healthy Chocolate – No Added Sugar
+                (3 oz, 5-Pack)</p>
+            <a href="https://www.amazon.in/EAT-BETTER-CO-Delicious-Replacement/dp/B0B6RNXHMP/ref=bmx_dp_3k0pgwqn_d_sccl_3_3/262-4914410-7820550?pd_rd_w=x0hmq&content-id=amzn1.sym.9545ee5f-009a-494e-984b-d44c7273a774&pf_rd_p=9545ee5f-009a-494e-984b-d44c7273a774&pf_rd_r=5KCK0S3TVE47KD5G4NVS&pd_rd_wg=rQIXy&pd_rd_r=eb88fef9-e366-4488-9e3f-7745171491f9&pd_rd_i=B0B6RNXHMP&psc=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+
+
+        <div class="item">
+            <a href="https://www.amazon.in/Eat-Better-Co-Healthy-Chatpata/dp/B0CVBBP1V4/ref=pd_bxgy_img_d_sccl_1/262-4914410-7820550?pd_rd_w=Dl6qO&content-id=amzn1.sym.f406cf11-1229-4650-9e74-6c521f43ef93&pf_rd_p=f406cf11-1229-4650-9e74-6c521f43ef93&pf_rd_r=N337ED3HB211XKN0072A&pd_rd_wg=Eui09&pd_rd_r=55483b6a-3986-4806-8f1c-40c11099ddd3&pd_rd_i=B0CVBBP1V4&th=1"
+                target="_blank"><img src="i30.jpg" alt="Item 30"></a>
+            <p class="desci">Eat Better Co – Quinoa Healthy Namkeen – Chatpata Chilli Lime – Healthy Namkeen Snacks -
+                Pack of 2 – 200 grams - Healthy Snacks for Weight Loss - Roasted NOT Fried</p>
+            <a href="https://www.amazon.in/Eat-Better-Co-Healthy-Chatpata/dp/B0CVBBP1V4/ref=pd_bxgy_img_d_sccl_1/262-4914410-7820550?pd_rd_w=Dl6qO&content-id=amzn1.sym.f406cf11-1229-4650-9e74-6c521f43ef93&pf_rd_p=f406cf11-1229-4650-9e74-6c521f43ef93&pf_rd_r=N337ED3HB211XKN0072A&pd_rd_wg=Eui09&pd_rd_r=55483b6a-3986-4806-8f1c-40c11099ddd3&pd_rd_i=B0CVBBP1V4&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0CVN4LRVM/ref=sspa_dk_detail_5?pd_rd_i=B0CVN4LRVM&pd_rd_w=CmjRe&content-id=amzn1.sym.2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pf_rd_p=2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pf_rd_r=0BT254KR1SSMT2WTHS5W&pd_rd_wg=RNhcJ&pd_rd_r=d9e24c5e-2fda-459c-8b0e-60c1ca23afad&s=grocery&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1"
+                target="_blank"><img src="i31.jpg" alt="Item 31"></a>
+            <p class="desci">Kikibix Baked Protein Bhujiya & Roasted Millet Namkeen Combo Healthy Snacks, No Sugar, No
+                Palm Oil, 100% Baked Not Fried - Each Pack -100gm, Pack of 2</p>
+            <a href="https://www.amazon.in/dp/B0CVN4LRVM/ref=sspa_dk_detail_5?pd_rd_i=B0CVN4LRVM&pd_rd_w=CmjRe&content-id=amzn1.sym.2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pf_rd_p=2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pf_rd_r=0BT254KR1SSMT2WTHS5W&pd_rd_wg=RNhcJ&pd_rd_r=d9e24c5e-2fda-459c-8b0e-60c1ca23afad&s=grocery&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+
+        <div class="item">
+            <a href="https://www.amazon.in/BRB-Chipotle-Flavour-Calorie-Healthy/dp/B09CDWJSNB/ref=pd_bxgy_img_d_sccl_2/262-4914410-7820550?pd_rd_w=MD7QQ&content-id=amzn1.sym.f406cf11-1229-4650-9e74-6c521f43ef93&pf_rd_p=f406cf11-1229-4650-9e74-6c521f43ef93&pf_rd_r=G1ZHMQ4QH63VSPCFY1AW&pd_rd_wg=11B4H&pd_rd_r=be9a1ca6-1139-4b54-9bd1-08f370fef1c3&pd_rd_i=B09CDWJSNB&psc=1"
+                target="_blank"><img src="i32.jpg" alt="Item 32"></a>
+            <p class="desci">BRB Popped Potato Chips | Not Baked, Not Fried | Sweet Chipotle Flavour | 5 Packs X 48g |
+                60% Less Fat | Low Calorie | Healthy Snack, Large</p>
+            <a href="https://www.amazon.in/BRB-Chipotle-Flavour-Calorie-Healthy/dp/B09CDWJSNB/ref=pd_bxgy_img_d_sccl_2/262-4914410-7820550?pd_rd_w=MD7QQ&content-id=amzn1.sym.f406cf11-1229-4650-9e74-6c521f43ef93&pf_rd_p=f406cf11-1229-4650-9e74-6c521f43ef93&pf_rd_r=G1ZHMQ4QH63VSPCFY1AW&pd_rd_wg=11B4H&pd_rd_r=be9a1ca6-1139-4b54-9bd1-08f370fef1c3&pd_rd_i=B09CDWJSNB&psc=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button> </a>
+
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

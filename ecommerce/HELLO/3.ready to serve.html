@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready To Serve</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+        body {
+            background: linear-gradient(to right, #f7f6f5, #fefaf8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .heading {
+            width: 100%;
+            text-align: center;
+            margin: 0 0;
+        }
+
+        .head {
+            margin: 10px;
+            height: 10.5vh;
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            /* text-align: center; */
+            background: linear-gradient(135deg, #f2bea0 0%, #fda085 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .head::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            z-index: -1;
+            filter: blur(20px);
+            opacity: 0.7;
+            transition: all 0.5s;
+        }
+
+        .head:hover::before {
+            filter: blur(25px);
+            opacity: 1;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* above is-----------new code --------------- */
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .item {
+            height: auto;
+            width: 20vw;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 20px;
+            border: 1px solid #fda085;
+
+        }
+
+        .item a {
+            text-decoration: none;
+        }
+
+        .btn {
+            height: 50px;
+            width: 100%;
+            border-radius: 50px;
+            display: block;
+            transition: all 0.4s;
+
+        }
+
+        .btn:hover {
+            color: azure;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        .item:hover {
+            background-color: pink;
+        }
+
+        .item img {
+            max-width: 100%;
+            height: 35vh;
+            width: 25vw;
+            align-self: center;
+        }
+
+        .desci {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .desci:hover {
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1 class="head">&nbsp;Ready to Serve &nbsp;<img src="dinner.png" alt="" srcset="" width="60px" height="60px"></h1>
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <a href="https://www.amazon.in/Epigamia-Almond-Milk-Unsweetened-Dairy/dp/B08K3GV8Q3/ref=sr_1_8_f3_0g_fs?crid=3OZVFJIU9KKLV&dib=eyJ2IjoiMSJ9.GD0xhV47rne5HWf0wHqkXJkqL2Di-VUpbIM137zkBQc6a3CUXqa-yhSyqbZd9SnTgPOji3mnxctXTULCCZO5G1slsQfBK_xUDHp9TsOktfgDxZu9c4JGkSDPPZJxqZqWDNJh_GErHpBD87b3YtqrIIC5SfbmssEPefIYpTQxppM_YbX6EKM-XOm_ecc4GvFRZN0LG4qOM0n1QVzJQzcqEqq2mb8nbBUyPYZtI4dxCytobl6OiZRGaNyzZh-ltU8PGsfcv-kB0WuGIq06dBR3LXjL14qjX35zAsHwO5Qc_Ss.Kp8Z1l7Cnohnw_kcx4hu1oQ967m3et-c3KmYQ1wu2qg&dib_tag=se&keywords=dairy%2Bfree%2Bfood%2Bitems&qid=1712038695&s=grocery&sprefix=daury%2Bfree%2Bfood%2Bitems%2Cgrocery%2C211&sr=1-8&th=1"
+                target="_blank"><img src="s1.jpg" alt="Item 1"></a>
+            <p class="desci">Epigamia Almond Drink- Unsweetened, 1 Litre| Dairy Free</p>
+            <a href="https://www.amazon.in/Epigamia-Almond-Milk-Unsweetened-Dairy/dp/B08K3GV8Q3/ref=sr_1_8_f3_0g_fs?crid=3OZVFJIU9KKLV&dib=eyJ2IjoiMSJ9.GD0xhV47rne5HWf0wHqkXJkqL2Di-VUpbIM137zkBQc6a3CUXqa-yhSyqbZd9SnTgPOji3mnxctXTULCCZO5G1slsQfBK_xUDHp9TsOktfgDxZu9c4JGkSDPPZJxqZqWDNJh_GErHpBD87b3YtqrIIC5SfbmssEPefIYpTQxppM_YbX6EKM-XOm_ecc4GvFRZN0LG4qOM0n1QVzJQzcqEqq2mb8nbBUyPYZtI4dxCytobl6OiZRGaNyzZh-ltU8PGsfcv-kB0WuGIq06dBR3LXjL14qjX35zAsHwO5Qc_Ss.Kp8Z1l7Cnohnw_kcx4hu1oQ967m3et-c3KmYQ1wu2qg&dib_tag=se&keywords=dairy%2Bfree%2Bfood%2Bitems&qid=1712038695&s=grocery&sprefix=daury%2Bfree%2Bfood%2Bitems%2Cgrocery%2C211&sr=1-8&th=1"
+                target="_blank" rel="noopener noreferrer"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0CLLXXN3T/ref=sspa_dk_detail_4?pd_rd_i=B0CLLXXN3T&pd_rd_w=MTmHe&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=GS23HVFF5XVMD2XBT9G8&pd_rd_wg=mNUMV&pd_rd_r=4fa2e2ec-5a21-4891-abcd-93aea2f37153&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1"
+                target="_blank"><img src="s2.jpg" alt="Item 2"></a>
+            <p class="desci">So Good Plant Based Oat Beverage Caramel Flavour 1 L | Lactose Free | Gluten Free | No
+                Preservatives | Zero Cholesterol | Dairy Free| Source of Calcium & Vitamins</p>
+            <a href="https://www.amazon.in/dp/B0CLLXXN3T/ref=sspa_dk_detail_4?pd_rd_i=B0CLLXXN3T&pd_rd_w=MTmHe&content-id=amzn1.sym.dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_p=dcd65529-2e56-4c74-bf19-15db07b4a1fc&pf_rd_r=GS23HVFF5XVMD2XBT9G8&pd_rd_wg=mNUMV&pd_rd_r=4fa2e2ec-5a21-4891-abcd-93aea2f37153&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.com/Electrolyte-Powder-Lemonade-Hydration-Supplement/dp/B07Q33CN85/ref=sr_1_25_sspa?dib=eyJ2IjoiMSJ9.D530ihNQuk6wdqahmOUC4tui8L3TNiGtTWDRINkQhe-XgbGQguDVwUN4rNsyQ306xzuBK4q0viDej20RucGRmOQyhym9nPUA-_Cn8iDyuIh8Td33ZjOskRnjJgHrEMAXmoQvyi1mbZVwgyM2qU5q3BwOT49R_szK9uOvxzajZqK_VmKk3MjMJNa3zqhTkE6oFFyP8a46CIRfriuC0FQjVD8n0pdAsNZ9baffG2Ei1pNiCURZwN4D4a3i6TMZG6Xlz1umNufmMnTSWDqy3Owg8JuyjYZPQl4ZLUSDqkcbSNc.POfZkg2cNctOvRLXrdTVX10uRBFXKzfMBEKfEj-1aeE&dib_tag=se&keywords=Lemon+Bars&qid=1712226864&sr=8-25-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1"
+                target="_blank"><img src="s3.jpg" alt="Item 3"></a>
+            <p class="desci">KEY NUTRIENTS Multivitamin Electrolytes Powder No Sugar - Refreshing Lemonade Electrolyte
+                Powder - Hydration Powder - No Calories, Gluten Free Keto Electrolytes Powder - 90 Servings</p>
+            <a href="https://www.amazon.com/Electrolyte-Powder-Lemonade-Hydration-Supplement/dp/B07Q33CN85/ref=sr_1_25_sspa?dib=eyJ2IjoiMSJ9.D530ihNQuk6wdqahmOUC4tui8L3TNiGtTWDRINkQhe-XgbGQguDVwUN4rNsyQ306xzuBK4q0viDej20RucGRmOQyhym9nPUA-_Cn8iDyuIh8Td33ZjOskRnjJgHrEMAXmoQvyi1mbZVwgyM2qU5q3BwOT49R_szK9uOvxzajZqK_VmKk3MjMJNa3zqhTkE6oFFyP8a46CIRfriuC0FQjVD8n0pdAsNZ9baffG2Ei1pNiCURZwN4D4a3i6TMZG6Xlz1umNufmMnTSWDqy3Owg8JuyjYZPQl4ZLUSDqkcbSNc.POfZkg2cNctOvRLXrdTVX10uRBFXKzfMBEKfEj-1aeE&dib_tag=se&keywords=Lemon+Bars&qid=1712226864&sr=8-25-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.com/Natures-Bakery-Whole-Non-GMO-Blueberry/dp/B006BHRU9U/ref=sr_1_36?dib=eyJ2IjoiMSJ9.D530ihNQuk6wdqahmOUC4tui8L3TNiGtTWDRINkQhe-XgbGQguDVwUN4rNsyQ306xzuBK4q0viDej20RucGRmOQyhym9nPUA-_Cn8iDyuIh8Td33ZjOskRnjJgHrEMAXmoQvyi1mbZVwgyM2qU5q3BwOT49R_szK9uOvxzajZqK_VmKk3MjMJNa3zqhTkE6oFFyP8a46CIRfriuC0FQjVD8n0pdAsNZ9baffG2Ei1pNiCURZwN4D4a3i6TMZG6Xlz1umNufmMnTSWDqy3Owg8JuyjYZPQl4ZLUSDqkcbSNc.POfZkg2cNctOvRLXrdTVX10uRBFXKzfMBEKfEj-1aeE&dib_tag=se&keywords=Lemon+Bars&qid=1712226864&sr=8-36"
+                target="_blank"><img src="s4.jpg" alt="Item 4"></a>
+            <p class="desci">Nature’s Bakery Whole Wheat Fig Bars, Blueberry, Real Fruit, Vegan, Non-GMO, Snack bar,
+                Twin packs- 12 count</p>
+            <a href="https://www.amazon.com/Natures-Bakery-Whole-Non-GMO-Blueberry/dp/B006BHRU9U/ref=sr_1_36?dib=eyJ2IjoiMSJ9.D530ihNQuk6wdqahmOUC4tui8L3TNiGtTWDRINkQhe-XgbGQguDVwUN4rNsyQ306xzuBK4q0viDej20RucGRmOQyhym9nPUA-_Cn8iDyuIh8Td33ZjOskRnjJgHrEMAXmoQvyi1mbZVwgyM2qU5q3BwOT49R_szK9uOvxzajZqK_VmKk3MjMJNa3zqhTkE6oFFyP8a46CIRfriuC0FQjVD8n0pdAsNZ9baffG2Ei1pNiCURZwN4D4a3i6TMZG6Xlz1umNufmMnTSWDqy3Owg8JuyjYZPQl4ZLUSDqkcbSNc.POfZkg2cNctOvRLXrdTVX10uRBFXKzfMBEKfEj-1aeE&dib_tag=se&keywords=Lemon+Bars&qid=1712226864&sr=8-36"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Protein-Digestible-Calcium-Chocolate-Flavour-200ML/dp/B081C36S28/ref=sr_1_5?dib=eyJ2IjoiMSJ9.HhnrR8q2-BWKaK9_w_XFmPgKF-uWetvAunUQ-yFfh0xhrrJUwImL-cDU1XNOz63dfyvOQ-m8KfUcEJ4j58OIpH8z7nq_AUCDBcZu28K6s24sp7EApQEUSfRh0Kd_5QRhu2jtkM39PSs4ECX6CJTEDTrZsggaK5925UpzKvYUGVB4dnxZlHhcdObkfsAoUbfDX2fFqz1sj9WghtTBn0AabbdW3bKF48HFDedKfOlEosdwyqRVGD7BM8fA4nVue3Pyfcj1lUJl8pWZF7j0IPJ2Dk9Dc8Fch87Itm9JKO1ZbzU.Fq9pZXGUFVVBYVl2Dmex7QC-twdoVXIrvdwKBDGoH40&dib_tag=se&keywords=protein+shake+vegan&qid=1712227386&sr=8-5"
+                target="_blank"><img src="s5.jpg" alt="Item 5"></a>
+            <p class="desci">Strive Vegan Protein Shake with 12.6g Plant Protein and 25% Calcium, Naturally Sweetend,
+                Low Calorie Drink, No Dairy, No Sugar, Healthy & Delicious, Pack Of 6 x 200ml (Chocolate Almond)</p>
+            <a href="https://www.amazon.in/Protein-Digestible-Calcium-Chocolate-Flavour-200ML/dp/B081C36S28/ref=sr_1_5?dib=eyJ2IjoiMSJ9.HhnrR8q2-BWKaK9_w_XFmPgKF-uWetvAunUQ-yFfh0xhrrJUwImL-cDU1XNOz63dfyvOQ-m8KfUcEJ4j58OIpH8z7nq_AUCDBcZu28K6s24sp7EApQEUSfRh0Kd_5QRhu2jtkM39PSs4ECX6CJTEDTrZsggaK5925UpzKvYUGVB4dnxZlHhcdObkfsAoUbfDX2fFqz1sj9WghtTBn0AabbdW3bKF48HFDedKfOlEosdwyqRVGD7BM8fA4nVue3Pyfcj1lUJl8pWZF7j0IPJ2Dk9Dc8Fch87Itm9JKO1ZbzU.Fq9pZXGUFVVBYVl2Dmex7QC-twdoVXIrvdwKBDGoH40&dib_tag=se&keywords=protein+shake+vegan&qid=1712227386&sr=8-5"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Mypro-Sport-Nutrition-Vitamins-Supplement/dp/B09GFYSXZX/ref=sr_1_7?dib=eyJ2IjoiMSJ9.HhnrR8q2-BWKaK9_w_XFmPgKF-uWetvAunUQ-yFfh0xhrrJUwImL-cDU1XNOz63dfyvOQ-m8KfUcEJ4j58OIpH8z7nq_AUCDBcZu28K6s24sp7EApQEUSfRh0Kd_5QRhu2jtkM39PSs4ECX6CJTEDTrZsggaK5925UpzKvYUGVB4dnxZlHhcdObkfsAoUbfDX2fFqz1sj9WghtTBn0AabbdW3bKF48HFDedKfOlEosdwyqRVGD7BM8fA4nVue3Pyfcj1lUJl8pWZF7j0IPJ2Dk9Dc8Fch87Itm9JKO1ZbzU.Fq9pZXGUFVVBYVl2Dmex7QC-twdoVXIrvdwKBDGoH40&dib_tag=se&keywords=protein%2Bshake%2Bvegan&qid=1712227632&sr=8-7&th=1"
+                target="_blank"><img src="s6.jpg" alt="Item 6"></a>
+            <p class="desci">Mypro Sport Nutrition Plant Protein Powder Pea & Brown Rice Protein (23g protein,22
+                Vitamins & minerals,5g BCAA) Plant Based Vegan Protein Supplement For Men & Women (Chocolate Flavour
+                -1000 Gm)</p>
+            <a href="https://www.amazon.in/Mypro-Sport-Nutrition-Vitamins-Supplement/dp/B09GFYSXZX/ref=sr_1_7?dib=eyJ2IjoiMSJ9.HhnrR8q2-BWKaK9_w_XFmPgKF-uWetvAunUQ-yFfh0xhrrJUwImL-cDU1XNOz63dfyvOQ-m8KfUcEJ4j58OIpH8z7nq_AUCDBcZu28K6s24sp7EApQEUSfRh0Kd_5QRhu2jtkM39PSs4ECX6CJTEDTrZsggaK5925UpzKvYUGVB4dnxZlHhcdObkfsAoUbfDX2fFqz1sj9WghtTBn0AabbdW3bKF48HFDedKfOlEosdwyqRVGD7BM8fA4nVue3Pyfcj1lUJl8pWZF7j0IPJ2Dk9Dc8Fch87Itm9JKO1ZbzU.Fq9pZXGUFVVBYVl2Dmex7QC-twdoVXIrvdwKBDGoH40&dib_tag=se&keywords=protein%2Bshake%2Bvegan&qid=1712227632&sr=8-7&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Supreem-Super-Foods-NormalifeTM-Authentic/dp/B0B88XKXCG/ref=sr_1_9?dib=eyJ2IjoiMSJ9._c2Mws-sM-kIEujnExanb1710-vQfOoZDk6yYB2M8bLnOpeMnKtXS6VKoR6_EsRq2ySOTIwaUEWbF8f1hS4GZRZoC1caPLpA_Kp5Zj2XJ3HcE9NCA6FaOTOjHpF0nqOfp_adM9ptTXYLixlUS6GaQR0pheMbmo-tpdGnuwpuK9VyaC8e1eAdd5MaygTONfIFPWo0onfgJqz4mbYZmIsvsPJNUXhHizoXpuewvHNYoARAfJpL7kARVXGpkGUoPm3jVZLRRGyKXz8PpuMBsrJzG4TPxeCXGoE1SSe3BX-BCGc.Lqm3IQW3MLLFfHEjXjSo2QEwhiD5a4bPC9yN5kolxRc&dib_tag=se&qid=1712228066&refinements=p_n_intended_use_browse-bin%3A5224522031&s=grocery&sr=1-9"
+                target="_blank"><img src="s7.jpg" alt="Item 7"></a>
+            <p class="desci">Supreem Super Foods Normalife® Ginger Lemon Amla Healthy Squash | Immunity Booster |
+                Diabetic Friendly - Low GI | Perfect Summer Drink | Aids Digestion | All Natural Ingredients | 700 ml
+            </p>
+            <a href="https://www.amazon.in/Supreem-Super-Foods-NormalifeTM-Authentic/dp/B0B88XKXCG/ref=sr_1_9?dib=eyJ2IjoiMSJ9._c2Mws-sM-kIEujnExanb1710-vQfOoZDk6yYB2M8bLnOpeMnKtXS6VKoR6_EsRq2ySOTIwaUEWbF8f1hS4GZRZoC1caPLpA_Kp5Zj2XJ3HcE9NCA6FaOTOjHpF0nqOfp_adM9ptTXYLixlUS6GaQR0pheMbmo-tpdGnuwpuK9VyaC8e1eAdd5MaygTONfIFPWo0onfgJqz4mbYZmIsvsPJNUXhHizoXpuewvHNYoARAfJpL7kARVXGpkGUoPm3jVZLRRGyKXz8PpuMBsrJzG4TPxeCXGoE1SSe3BX-BCGc.Lqm3IQW3MLLFfHEjXjSo2QEwhiD5a4bPC9yN5kolxRc&dib_tag=se&qid=1712228066&refinements=p_n_intended_use_browse-bin%3A5224522031&s=grocery&sr=1-9"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Verynutri-Amladi-Juice-Contains-Honey/dp/B08KH4W35Z/ref=sr_1_22?dib=eyJ2IjoiMSJ9._c2Mws-sM-kIEujnExanb1710-vQfOoZDk6yYB2M8bLnOpeMnKtXS6VKoR6_EsRq2ySOTIwaUEWbF8f1hS4GZRZoC1caPLpA_Kp5Zj2XJ3HcE9NCA6FaOTOjHpF0nqOfp_adM9ptTXYLixlUS6GaQR0pheMbmo-tpdGnuwpuK9VyaC8e1eAdd5MaygTONfIFPWo0onfgJqz4mbYZmIsvsPJNUXhHizoXpuewvHNYoARAfJpL7kARVXGpkGUoPm3jVZLRRGyKXz8PpuMBsrJzG4TPxeCXGoE1SSe3BX-BCGc.Lqm3IQW3MLLFfHEjXjSo2QEwhiD5a4bPC9yN5kolxRc&dib_tag=se&qid=1712228066&refinements=p_n_intended_use_browse-bin%3A5224522031&s=grocery&sr=1-22"
+                target="_blank"><img src="s8.jpg" alt="Item 8"></a>
+            <p class="desci">Verynutri Aloe VeraJuice 600 Ml… (Amladi)</p>
+            <a href="https://www.amazon.in/Verynutri-Amladi-Juice-Contains-Honey/dp/B08KH4W35Z/ref=sr_1_22?dib=eyJ2IjoiMSJ9._c2Mws-sM-kIEujnExanb1710-vQfOoZDk6yYB2M8bLnOpeMnKtXS6VKoR6_EsRq2ySOTIwaUEWbF8f1hS4GZRZoC1caPLpA_Kp5Zj2XJ3HcE9NCA6FaOTOjHpF0nqOfp_adM9ptTXYLixlUS6GaQR0pheMbmo-tpdGnuwpuK9VyaC8e1eAdd5MaygTONfIFPWo0onfgJqz4mbYZmIsvsPJNUXhHizoXpuewvHNYoARAfJpL7kARVXGpkGUoPm3jVZLRRGyKXz8PpuMBsrJzG4TPxeCXGoE1SSe3BX-BCGc.Lqm3IQW3MLLFfHEjXjSo2QEwhiD5a4bPC9yN5kolxRc&dib_tag=se&qid=1712228066&refinements=p_n_intended_use_browse-bin%3A5224522031&s=grocery&sr=1-22"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B07FF7L984?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_TZKZ6BA3F43GYC54H4BN"
+                target="_blank"><img src="s9.jpg" alt="Item 9"></a>
+            <p class="desci">Natch Dried Thai Mango Slices, 100% All Natural, Vegan, Gluten Free, No Artificial
+                Preservatives, Trans Fat Free, Rich in Antioxidants, Chilli Flavour, 150gm each (Pack of 1)</p>
+            <a href="https://www.amazon.in/dp/B07FF7L984?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_TZKZ6BA3F43GYC54H4BN"
+                target="_blank"> <button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B09X6WZKD7?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_N3MZ7294NVBRJF50C3P1"
+                target="_blank"><img src="s10.jpg" alt="Item 10"></a>
+            <p class="desci">IncredaBrew Assorted Flavours Wellness Instant Coffee Powder - 20 Cups, Vitamin Rich
+                Flavoured Coffee | 4 Flavours x 5 Instant Coffee Sachets (2.2g each) for Milk/Black Coffee, Hot/Cold
+                Coffee</p>
+            <a href="https://www.amazon.in/dp/B09X6WZKD7?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_N3MZ7294NVBRJF50C3P1"
+                target="_blank"> <button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B01H3EOYDY?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_N597KZ33X79JSZ93MZPX"
+                target="_blank"><img src="s11.jpg" alt="Item 11"></a>
+            <p class="desci">Vitro Amla Arjuna Juice 500ml | Reduces Cholesterol Levels | Controls Acidity | Manages
+                Cardiac Health | Regulates Blood Pressure</p>
+            <a href="https://www.amazon.in/dp/B01H3EOYDY?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_N597KZ33X79JSZ93MZPX"
+                target="_blank"> <button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B088GWN58L?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_CHED99DBSMXJCB46A6QV"
+                target="_blank"><img src="s12.jpg" alt="Item 12"></a>
+            <p class="desci">Keya Lemon Juice Concentrate 250ml | Contains Natural Lemon Juice | Goodness of 25 Fresh
+                Lemons</p>
+            <a href="https://www.amazon.in/dp/B088GWN58L?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_CHED99DBSMXJCB46A6QV"
+                target="_blank"> <button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B013P5V00K?ref_=cm_sw_r_apan_dp_P7JZ2ZK98H72WS14KYYT&language=en-IN"
+                target="_blank"><img src="s13.jpg" alt="Item 13"></a>
+            <p class="desci">Real Activ 100% Apple Fruit Juice - 1L | No Added Sugars & Preservatives | Rich in Vitamin
+                C | Goodness of Best Apple | Tasty, Refreshing & Energizing Fruit Drin</p>
+            <a href="https://www.amazon.in/dp/B013P5V00K?ref_=cm_sw_r_apan_dp_P7JZ2ZK98H72WS14KYYT&language=en-IN"
+                target="_blank"><button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B01GV0P49Y?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_AY7XJNVQAX4E2VNJV4CD"
+                target="_blank"><img src="s14.jpg" alt="Item 14"></a>
+            <p class="desci">DABUR Real Fruit Power Mosambi Juice -1L</p>
+            <button class="btn btn-success">Buy Now</button>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B07NJJV2D6?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_3Y7TAG0G9WQHCAQ67AEY"
+                target="_blank"><img src="s15.jpg" alt="Item 15"></a>
+            <p class="desci">Powder(450g, Refill)| For Tasty & Healthy Orange Flavoured Glucose Drink| Provides Instant
+                Energy| Vitamin C Supports Immunity| Contains Calcium for Bone Health|</p>
+            <a href="https://www.amazon.in/dp/B07NJJV2D6?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_3Y7TAG0G9WQHCAQ67AEY"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B074NBPRT8?ref_=cm_sw_r_apan_dp_XDMK7M907JEK10C31FM7&language=en-IN"
+                target="_blank"><img src="s16.jpg" alt="Item 16"></a>
+            <p class="desci">Sofit Soya Drink Chocolate flavored, | Vegan Drink |Enriched with Goodness of/ Source of
+                plant protein, dietary fibers, vitamins and calcium | Naturally Lactose Free | Naturally Gluten Free |
+                Preservatives Free , 180 ML / 200 ML (Weight May Vary)</p>
+            <a href="https://www.amazon.in/dp/B074NBPRT8?ref_=cm_sw_r_apan_dp_XDMK7M907JEK10C31FM7&language=en-IN"
+                target="_blank"> <button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B01CSLM7MC?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_G37HPZTNYV4CR0WY7JFJ"
+                target="_blank"><img src="s17.jpg" alt="Item 17"></a>
+            <p class="desci">So Good Plant Based Almond Beverage Unsweetened 1 L | Lactose Free | No Added Sugar |Gluten
+                Free | No Preservatives | Zero Cholesterol | Dairy Free| Source of Calcium & Vitamins</p>
+            <a href="https://www.amazon.in/dp/B01CSLM7MC?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_G37HPZTNYV4CR0WY7JFJ"
+                target="_blank"> <button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0CLLXXN3T?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_6SDYBPAJQ707N65SR5T8&th=1"
+                target="_blank"><img src="s18.jpg" alt="Item 18"></a>
+            <p class="desci">So Good Plant Based Oat Beverage Caramel Flavour 1 L | Lactose Free | Gluten Free | No
+                Preservatives | Zero Cholesterol | Dairy Free| Source of Calcium & Vitamins</p>
+            <a href="https://www.amazon.in/dp/B0CLLXXN3T?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_6SDYBPAJQ707N65SR5T8&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B01BJ1IPD2?ref_=cm_sw_r_apan_dp_4MVDC0G1Y4107JW23WEE&language=en-IN"
+                target="_blank"><img src="s19.jpg" alt="Item 19"></a>
+            <p class="desci">DABUR Real Activ 100% Tender Coconut Water with No Added Sugars or Artifical Flavours -
+                200ml ( Pack of 6)</p>
+            <a href="https://www.amazon.in/dp/B01BJ1IPD2?ref_=cm_sw_r_apan_dp_4MVDC0G1Y4107JW23WEE&language=en-IN"
+                target="_blank"> <button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0CP9VSBH3?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_19AAY6SPKW8GV38VY91K"
+                target="_blank"><img src="s20.jpg" alt="Item 20"></a>
+            <p class="desci">Prifo traditional goodness ABC Juice Powder - Apple Beetroot Carrot Juice Powder | Natural
+                Drink | Instant | No White Sugar added | Chemical Free Processing - 250 Grams Pack.</p>
+            <a href="https://www.amazon.in/dp/B0CP9VSBH3?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_19AAY6SPKW8GV38VY91K"
+                target="_blank"> <button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B09BCKJ3NV?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_VJZ8VRDZ651G7G5Q3QQB"
+                target="_blank"><img src="s21.jpg" alt="Item 21"></a>
+            <p class="desci">Grand Green Super Food Blend – 241 gm I 30 Serving I Rich in Vitamin C & E I Immunity &
+                Energy Booster I Fat Burner I Supper Nutrients Blend of Herbal, Fruit & Vegetable</p>
+            <a href="https://www.amazon.in/dp/B09BCKJ3NV?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_VJZ8VRDZ651G7G5Q3QQB"
+                target="_blank"> <button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0CDTWD9KV?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_6VGPMZF2Y5AXYBE1WTS9&th=1"
+                target="_blank"><img src="s22.jpg" alt="Item 22"></a>
+            <p class="desci">AGADA ORGANIC - Moringa Powder for Tea (400 g, Pack Of 4), Smoothies, Food, or Shakes,
+                Plant-Based Energy Boost Herbal Infusion Tea Pouch (4)</p>
+            <a href="https://www.amazon.in/dp/B0CDTWD9KV?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_6VGPMZF2Y5AXYBE1WTS9&th=1"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0794TLV6B?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_RD7WM382GWQSV0SC7TRB"
+                target="_blank"><img src="s23.jpg" alt="Item 23"></a>
+            <p class="desci">Raw Pressery Valencia Orange Juice, 1000 ml</p>
+            <a href="https://www.amazon.in/dp/B0794TLV6B?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_RD7WM382GWQSV0SC7TRB"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0BWTTTD37?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_EXMJ7NGGB99YWJDCDF6F"
+                target="_blank"><img src="s24.jpg" alt="Item 24"></a>
+            <p class="desci">MALA's Watermelon Syrup 1000 ML</p>
+            <a href="https://www.amazon.in/dp/B0BWTTTD37?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_EXMJ7NGGB99YWJDCDF6F"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0B2F155SF?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_QS914NXT9VGZR0B4TSTM&th=1"
+                target="_blank"><img src="s25.jpg" alt="Item 25"></a>
+            <p class="desci">TeaFit ZERO SUGAR Ice Tea Trial Pack (Pack of 3-300ml each) | Freshly Brewed & Unsweetened
+                Drink | 15 Super Ayurvedic Herbs | Hydration for Summers | For Immunity, Skin & Hair | Ready to Drink
+            </p>
+            <a href="https://www.amazon.in/dp/B0B2F155SF?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_QS914NXT9VGZR0B4TSTM&th=1"
+                target="_blank"> <button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/Grandmas-Fresh-Grape-Squash-Passion/dp/B09NLZR5XR/ref=sr_1_11?dib=eyJ2IjoiMSJ9.9X2Y6P8ekYXcfFKXMsak-L1QOUK1A8RJSnlesyGFWxqFbeEssfdQKG7rzz8LLo8tG-dDE06U6oHRp4IxKNOvHVxZGIp8AK8SbNxq0uXxkHzWc1R8CPT4gZC3IedFfYydnGn9-Cbvr4XuqiP63LsftMbfgKHZxELi44S6IppOt7eiFnk2FzPbFQ4NNLMe2-G-N6ryqNgiBpko4FnlRb6PYT-pehpvHLBDHvXKCkqWTXM9HFfoqwmKn10fyYGJ02KC5nMXaM3K2O6keUN8l2D1dJQdPDb_O5jfb3SXokqwpYA.FVQKaDKVL54uOnfUmo2I9Sfe7w95kL1NBi-7BsP-Fj0&dib_tag=se&keywords=squash+drinks+kissan&qid=1712252725&sr=8-11"
+                target="_blank"><img src="s26.jpg" alt="Item 26"></a>
+            <p class="desci">Grandmas Fresh Grape Squash - Passion Fruit Squash Combo | 500ml Bottle | 100% Natural
+                Fruit Pulp | Sweet and Healthy Drink</p>
+            <a href="https://www.amazon.in/Grandmas-Fresh-Grape-Squash-Passion/dp/B09NLZR5XR/ref=sr_1_11?dib=eyJ2IjoiMSJ9.9X2Y6P8ekYXcfFKXMsak-L1QOUK1A8RJSnlesyGFWxqFbeEssfdQKG7rzz8LLo8tG-dDE06U6oHRp4IxKNOvHVxZGIp8AK8SbNxq0uXxkHzWc1R8CPT4gZC3IedFfYydnGn9-Cbvr4XuqiP63LsftMbfgKHZxELi44S6IppOt7eiFnk2FzPbFQ4NNLMe2-G-N6ryqNgiBpko4FnlRb6PYT-pehpvHLBDHvXKCkqWTXM9HFfoqwmKn10fyYGJ02KC5nMXaM3K2O6keUN8l2D1dJQdPDb_O5jfb3SXokqwpYA.FVQKaDKVL54uOnfUmo2I9Sfe7w95kL1NBi-7BsP-Fj0&dib_tag=se&keywords=squash+drinks+kissan&qid=1712252725&sr=8-11"
+                target="_blank"><button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B08NHF8JJB/ref=syn_sd_onsite_desktop_0?ie=UTF8&psc=1&pf_rd_p=fd82b077-06f6-479f-8fb9-11c7d326b43b&pf_rd_r=9TAZ922TERVK8CSJRADT&pd_rd_wg=iKVmY&pd_rd_w=CP9B4&pd_rd_r=a3014bde-e108-4a63-bfb8-92f9132ee3cd&aref=hdql3PfHx4"
+                target="_blank"><img src="s27.jpg" alt="Item 27"></a>
+            <p class="desci">Atlantis Amazon 3 In 1 Instant Coffee Premix Powder (Premix Has Milk, Coffee And Sugar) 5
+                Kg For Vending Machines And Manual Use, Packet</p>
+            <a href="https://www.amazon.in/dp/B08NHF8JJB/ref=syn_sd_onsite_desktop_0?ie=UTF8&psc=1&pf_rd_p=fd82b077-06f6-479f-8fb9-11c7d326b43b&pf_rd_r=9TAZ922TERVK8CSJRADT&pd_rd_wg=iKVmY&pd_rd_w=CP9B4&pd_rd_r=a3014bde-e108-4a63-bfb8-92f9132ee3cd&aref=hdql3PfHx4"
+                target="_blank"><button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B09LHTKQTJ?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_TCTP10YHAXGVXDG1B6EP"
+                target="_blank"><img src="s28.webp" alt="Item 28"></a>
+            <p class="desci">NATURE'S Precious Gift Blueberry Powder - 1 KG</p>
+            <a href="https://www.amazon.in/dp/B09LHTKQTJ?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_TCTP10YHAXGVXDG1B6EP"
+                target=_blank> <button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B08BWYM9CS?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_9XSV6BZMWBNME5K8YJFX"
+                target="_blank"><img src="s29.jpg" alt="Item 29"></a>
+            <p class="desci">looms & weaves - Lakadong Turmeric Latte Powder - 200gm</p>
+            <a href="https://www.amazon.in/dp/B08BWYM9CS?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_9XSV6BZMWBNME5K8YJFX"
+                target="_blank"> <button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0BMQJQH5S?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_FAYN5YQVAGJ2CG0REVRG"
+                target="_blank"><img src="s30.jpg" alt="Item 30"></a>
+            <p class="desci">Sri Sri Tattva Wheat Grass Juice - Daily Fitness Essential, 1L</p>
+            <a href="https://www.amazon.in/dp/B0BMQJQH5S?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_FAYN5YQVAGJ2CG0REVRG"
+                target="_blank"> <button class="btn btn-success">Buy Now</button>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.in/dp/B0CJP32FQW?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_0TTPS55KZMEH81Y18BQZ"
+                target="_blank"><img src="s31.jpg" alt="Item 31"></a>
+            <p class="desci">Aloevalley Mango Aloevera Juice 1000ml(Pack of 4) | Fruit Juice with Aloevera Pulp | Ready
+                To Serve Drink</p>
+
+            <a href="https://www.amazon.in/dp/B0CJP32FQW?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_0TTPS55KZMEH81Y18BQZ"
+                target="_blank"> <button class="btn btn-success">Buy Now</button></a>
+        </div>
+        <div class="item">
+            <a href="https://www.amazon.com/dp/B075NMWVG9/ref=sspa_dk_detail_0?psc=1&pd_rd_i=B075NMWVG9&pd_rd_w=Adwye&content-id=amzn1.sym.eb7c1ac5-7c51-4df5-ba34-ca810f1f119a&pf_rd_p=eb7c1ac5-7c51-4df5-ba34-ca810f1f119a&pf_rd_r=S4B2N5QPRSG6DR01PKZN&pd_rd_wg=nJ3WX&pd_rd_r=dfa2950e-e52d-4322-9656-62e66829e13d&s=hpc&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw"
+                target="_blank"><img src="s32.jpg" alt="Item 32"></a>
+            <p class="desci">SKRATCH LABS Hydration Packets - Hydration Drink Mix, Lemon Lime (20ct) - Electrolyte
+                Powder Packets Developed for Athletes and Sports Performance - Gluten Free, Vegan, Kosher</p>
+            <a href="https://www.amazon.com/dp/B075NMWVG9/ref=sspa_dk_detail_0?psc=1&pd_rd_i=B075NMWVG9&pd_rd_w=Adwye&content-id=amzn1.sym.eb7c1ac5-7c51-4df5-ba34-ca810f1f119a&pf_rd_p=eb7c1ac5-7c51-4df5-ba34-ca810f1f119a&pf_rd_r=S4B2N5QPRSG6DR01PKZN&pd_rd_wg=nJ3WX&pd_rd_r=dfa2950e-e52d-4322-9656-62e66829e13d&s=hpc&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw"
+                target="_blank"><button class="btn btn-success">Buy Now</button></a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
